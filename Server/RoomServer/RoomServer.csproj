@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp9.0</TargetFramework>
+    <LangVersion>9</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="ConsoleLogger">
+      <HintPath>..\..\Common\ConsoleLogger\bin\Release\netstandard2.0\ConsoleLogger.dll</HintPath>
+    </Reference>
+    <Reference Include="General">
+      <HintPath>..\..\Common\General\General\bin\Release\netstandard2.0\General.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

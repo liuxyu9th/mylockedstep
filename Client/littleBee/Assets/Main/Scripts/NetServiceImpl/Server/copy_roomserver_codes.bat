@@ -1,0 +1,2 @@
+rd /s/q D:\dudu502\LittleBee\Client\littleBee\Assets\Main\Scripts\NetServiceImpl\Server\Core
+XCOPY D:\dudu502\littleBee\Server\RoomServer\Core D:\dudu502\LittleBee\Client\littleBee\Assets\Main\Scripts\NetServiceImpl\Server\Core\ /s/e/y

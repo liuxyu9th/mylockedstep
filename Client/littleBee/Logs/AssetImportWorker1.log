@@ -1,0 +1,1722 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.42f1 (f1197811e8ce) revision 15800696'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'zh' Physical Memory: 32678 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+F:\Program Files\Unity 2021.3.42f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+F:/LittleBee-master/Client/littleBee
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+3765
+Successfully changed project path to: F:/LittleBee-master/Client/littleBee
+F:/LittleBee-master/Client/littleBee
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [32128] Host "[IP] 192.168.9.59 [Port] 0 [Flags] 2 [Guid] 2307957654 [EditorId] 2307957654 [Version] 1048832 [Id] WindowsEditor(7,PC-20240906VLCF) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [32128] Host "[IP] 192.168.9.59 [Port] 0 [Flags] 2 [Guid] 2307957654 [EditorId] 2307957654 [Version] 1048832 [Id] WindowsEditor(7,PC-20240906VLCF) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with {0} workers.
+Refreshing native plugins compatible for Editor in 99.10 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.42f1 (f1197811e8ce)
+[Subsystems] Discovering subsystems at path F:/Program Files/Unity 2021.3.42f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path F:/LittleBee-master/Client/littleBee/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f82)
+    Vendor:   NVIDIA
+    VRAM:     3935 MB
+    Driver:   31.0.15.5176
+Initialize mono
+Mono path[0] = 'F:/Program Files/Unity 2021.3.42f1/Editor/Data/Managed'
+Mono path[1] = 'F:/Program Files/Unity 2021.3.42f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'F:/Program Files/Unity 2021.3.42f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56720
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: F:/Program Files/Unity 2021.3.42f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: F:/Program Files/Unity 2021.3.42f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002660 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 88.75 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.639 seconds
+Domain Reload Profiling:
+	ReloadAssembly (639ms)
+		BeginReloadAssembly (86ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (477ms)
+			LoadAssemblies (85ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (103ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (305ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (74ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (89ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (96ms)
+				ProcessInitializeOnLoadMethodAttributes (45ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.007176 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 91.52 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.484 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1485ms)
+		BeginReloadAssembly (113ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (1294ms)
+			LoadAssemblies (95ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (244ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (62ms)
+			SetupLoadedEditorAssemblies (879ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (92ms)
+				BeforeProcessingInitializeOnLoad (70ms)
+				ProcessInitializeOnLoadAttributes (627ms)
+				ProcessInitializeOnLoadMethodAttributes (70ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 1.21 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5020 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 51 unused Assets / (0.7 MB). Loaded Objects now: 5467.
+Memory consumption went from 222.4 MB to 221.7 MB.
+Total: 3.174800 ms (FindLiveObjects: 0.423300 ms CreateObjectMapping: 0.379400 ms MarkObjects: 2.073000 ms  DeleteObjects: 0.298600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: 6b0e35c9178b02a6363f3721b7b8e397 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 180836.488653 seconds.
+  path: Assets/Main/Planets/Raw/Polygon Planets Pack/Materials/Demo_solar_system_materials/water_mat 4.mat
+  artifactKey: Guid(4f68f155404ad7b4aa397f728f6d4cc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Main/Planets/Raw/Polygon Planets Pack/Materials/Demo_solar_system_materials/water_mat 4.mat using Guid(4f68f155404ad7b4aa397f728f6d4cc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b32d265c1476dd20f74f2657e0b92e6a') in 0.312471 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Epic Toon FX/Materials/Emoticons/sick3.mat
+  artifactKey: Guid(4c91e7c3c732353409b3110672695b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Emoticons/sick3.mat using Guid(4c91e7c3c732353409b3110672695b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdc28794bfbbfe854c67fd3cd778d731') in 0.041166 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Epic Toon FX/Materials/Splat/splat02.mat
+  artifactKey: Guid(3ba60631b79b3164c9c63be162da8201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Splat/splat02.mat using Guid(3ba60631b79b3164c9c63be162da8201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43c9822f639df2960467da0cd58e2cf8') in 0.023535 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Main/Planets/Raw/Polygon Planets Pack/Materials/Demo_solar_system_materials/water_mat 8.mat
+  artifactKey: Guid(3d86eee1dabb4e64d8b8795e91292668) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Main/Planets/Raw/Polygon Planets Pack/Materials/Demo_solar_system_materials/water_mat 8.mat using Guid(3d86eee1dabb4e64d8b8795e91292668) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb46e3d709223a5ed1eb56a1e619a492') in 0.032942 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Epic Toon FX/Materials/Skulls/skull_evil.mat
+  artifactKey: Guid(d9d84bf291981044f8a47027ad0956fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Skulls/skull_evil.mat using Guid(d9d84bf291981044f8a47027ad0956fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '021d7871f44a001be16cbbee4a45fc8e') in 0.043604 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/StylizedGround/Materials/SGT_Ice_2.mat
+  artifactKey: Guid(3d55a4413b952ac40a13549c3ffe7613) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/StylizedGround/Materials/SGT_Ice_2.mat using Guid(3d55a4413b952ac40a13549c3ffe7613) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27864ff1d6f4a0f3d21008ff20967843') in 0.056705 seconds 
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Epic Toon FX/Materials/Skulls/skull4.mat
+  artifactKey: Guid(b32d83f23be6ff846b7e4581eb6eaf9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Skulls/skull4.mat using Guid(b32d83f23be6ff846b7e4581eb6eaf9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c4e93ffd7ca263a945e25f78bf9a008') in 0.020513 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Epic Toon FX/Materials/Skulls/skull_love.mat
+  artifactKey: Guid(9508913321a683748b47ef37ee8cd11b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Skulls/skull_love.mat using Guid(9508913321a683748b47ef37ee8cd11b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '559813f1bd39482cbbe10f9750ce4c67') in 0.097506 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.666707 seconds.
+  path: Assets/PolygonSciFiSpace/Models/Materials/PolygonSciFiSpace_Texture_03_A.mat
+  artifactKey: Guid(b0b0e6f101d08574887522f398ad5db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/PolygonSciFiSpace/Models/Materials/PolygonSciFiSpace_Texture_03_A.mat using Guid(b0b0e6f101d08574887522f398ad5db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e69ec4ddbe53861abf056e8e9bb3426b') in 0.046110 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Main/Planets/Raw/Polygon Planets Pack/Materials/Demo_solar_system_materials/ground_mat 5.mat
+  artifactKey: Guid(45e88cb4d307df645a1448a9064139c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Main/Planets/Raw/Polygon Planets Pack/Materials/Demo_solar_system_materials/ground_mat 5.mat using Guid(45e88cb4d307df645a1448a9064139c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c33fb724ee800cef3b5e6f8963cab1d7') in 0.016084 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Epic Toon FX/Demo/Materials/Skybox/PurpleSkybox.mat
+  artifactKey: Guid(eae4da572696be0409bce4b6e04a3e57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Demo/Materials/Skybox/PurpleSkybox.mat using Guid(eae4da572696be0409bce4b6e04a3e57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '267e9ed718a605a41a7c7742d0120b9b') in 0.065553 seconds 
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/StylizedGround/Materials/SGT_Autumn_Ground_3.mat
+  artifactKey: Guid(0b27ce732c56b7f42811be8cf8aa8df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/StylizedGround/Materials/SGT_Autumn_Ground_3.mat using Guid(0b27ce732c56b7f42811be8cf8aa8df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4267f5f4780bf96d3f469cbcc8ed645f') in 0.059371 seconds 
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Epic Toon FX/Materials/Text/smack.mat
+  artifactKey: Guid(a03694b155628b44e94d75e444aa7341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Text/smack.mat using Guid(a03694b155628b44e94d75e444aa7341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd74a31efcfc8552937286ed25b856999') in 0.025673 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Fonts/NotoSans-SemiBold.ttf
+  artifactKey: Guid(38821d315e483e04988b8e460b8dfbf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Fonts/NotoSans-SemiBold.ttf using Guid(38821d315e483e04988b8e460b8dfbf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52b28f638cd1dac602238f8a271485ae') in 0.063488 seconds 
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Main/Planets/Raw/Polygon Planets Pack/Meshes/Asteroid_Belts/asteroid_belt_8.fbx
+  artifactKey: Guid(e13a5fe0cdd671943827be793323db45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Main/Planets/Raw/Polygon Planets Pack/Meshes/Asteroid_Belts/asteroid_belt_8.fbx using Guid(e13a5fe0cdd671943827be793323db45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cea7fcacfeff6cbb92c1722df02e3b4') in 0.256781 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Epic Toon FX/Demo/Materials/dev2.mat
+  artifactKey: Guid(207691d913319fa408633bc6df8080c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Demo/Materials/dev2.mat using Guid(207691d913319fa408633bc6df8080c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '201a0b1167b014428b61ac3365b06414') in 0.022170 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/PolygonSciFiSpace/Materials/Alts/PolygonScifiSpace_Material_02_B.mat
+  artifactKey: Guid(8a6d64850f424d3419b8d9df49078ff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/PolygonSciFiSpace/Materials/Alts/PolygonScifiSpace_Material_02_B.mat using Guid(8a6d64850f424d3419b8d9df49078ff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7569fbc1b1f58518eec99a4ab1061231') in 0.031004 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/StylizedGround/Materials/SGT_DesertSoil_1.mat
+  artifactKey: Guid(7fd9933741bb1c74ead6dd99c1ab09f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/StylizedGround/Materials/SGT_DesertSoil_1.mat using Guid(7fd9933741bb1c74ead6dd99c1ab09f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8020099bd6a861265c0706e24bc4d57d') in 0.059416 seconds 
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Epic Toon FX/Materials/Emoticons/silly.mat
+  artifactKey: Guid(5e4e3dc9804f1a142b206023fb4e1e07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Emoticons/silly.mat using Guid(5e4e3dc9804f1a142b206023fb4e1e07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f88cb563581e0775c914be10d7003626') in 0.025172 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/PolygonSciFiSpace/Materials/Alts/PolygonScifiSpace_Sign_01_B.mat
+  artifactKey: Guid(59c39e62de56ee84db041e0e7ea26ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/PolygonSciFiSpace/Materials/Alts/PolygonScifiSpace_Sign_01_B.mat using Guid(59c39e62de56ee84db041e0e7ea26ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6af28049751232c7d903d96c6e89a9fb') in 0.022430 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Main/Planets/Raw/Polygon Planets Pack/Meshes/Asteroid_Belts/asteroid_belt_7.fbx
+  artifactKey: Guid(0eabcb385a51d294e9e078542d3aa99e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Main/Planets/Raw/Polygon Planets Pack/Meshes/Asteroid_Belts/asteroid_belt_7.fbx using Guid(0eabcb385a51d294e9e078542d3aa99e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7ba6e4b42da803e8f669e26415d0198') in 0.022816 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Main/SkyBox/Materials/PolygonScifiSpace_Skybox_03.mat
+  artifactKey: Guid(a7d4f5041273f4b469a8633035abc6c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Main/SkyBox/Materials/PolygonScifiSpace_Skybox_03.mat using Guid(a7d4f5041273f4b469a8633035abc6c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9deb639b05d19105a3f7c1f17c4b2eb1') in 0.104596 seconds 
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/StylizedGround/Materials/SGT_Autumn_Ground_4.mat
+  artifactKey: Guid(7766f2895805fa4458f6a1979243eae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/StylizedGround/Materials/SGT_Autumn_Ground_4.mat using Guid(7766f2895805fa4458f6a1979243eae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be42773fa6e6a6eb9aef2525d76a4344') in 0.071202 seconds 
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/PolygonSciFiSpace/Materials/Alts/PolygonScifiSpace_Material_04_D.mat
+  artifactKey: Guid(0dd46c726e72adc45a13a91d6fc48aa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/PolygonSciFiSpace/Materials/Alts/PolygonScifiSpace_Material_04_D.mat using Guid(0dd46c726e72adc45a13a91d6fc48aa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '586dcecb7ef9ae1b44155d3745957544') in 0.034610 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/StylizedGround/Materials/SGT_Flowers_2.mat
+  artifactKey: Guid(133d24ad0dc21ac4faf788bbf1255521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/StylizedGround/Materials/SGT_Flowers_2.mat using Guid(133d24ad0dc21ac4faf788bbf1255521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec0febab4481fcffd48c86438572b904') in 0.049705 seconds 
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/StylizedGround/Materials/SGT_Winter_Ground_4.mat
+  artifactKey: Guid(7114fffabfb4a744e875e11d456c46d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/StylizedGround/Materials/SGT_Winter_Ground_4.mat using Guid(7114fffabfb4a744e875e11d456c46d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed47b7b1e33d61d92e3eddc63ae0d53a') in 0.050666 seconds 
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Epic Toon FX/Materials/Glows/glow.mat
+  artifactKey: Guid(e653836c30661fe419b8992e230ca189) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Glows/glow.mat using Guid(e653836c30661fe419b8992e230ca189) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32d2cf01e1e21575cb0ca59dc49d99ff') in 0.011107 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Main/Materials/Planet/EarthMat.mat
+  artifactKey: Guid(5f1811983cba9524fb4593c805b3e22e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Main/Materials/Planet/EarthMat.mat using Guid(5f1811983cba9524fb4593c805b3e22e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '022feacef527856b122453ccdbb93bd1') in 1.592359 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Epic Toon FX/Materials/Misc/explosion.mat
+  artifactKey: Guid(d85e59baa6fff034a8557b9a4df53ca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Misc/explosion.mat using Guid(d85e59baa6fff034a8557b9a4df53ca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f079f4f1258e75334ea1235b3b791f0') in 0.027783 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/PolygonSciFiSpace/Materials/Alts/PolygonScifiSpace_Sign_01_C.mat
+  artifactKey: Guid(4c86312164bd0544f8eda59d1daf7044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/PolygonSciFiSpace/Materials/Alts/PolygonScifiSpace_Sign_01_C.mat using Guid(4c86312164bd0544f8eda59d1daf7044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '779851a18ec9863369882492a75237e4') in 0.034092 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Epic Toon FX/Materials/Fire/fire_ground3x3.mat
+  artifactKey: Guid(ad0b94fa25e1783499040f91f5a6cb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Fire/fire_ground3x3.mat using Guid(ad0b94fa25e1783499040f91f5a6cb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03773cd1f6b0ae082b7e25bcee35421a') in 0.020812 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.002137 seconds.
+  path: Assets/StylizedGround/Materials/SGT_Winter_Ground_3.mat
+  artifactKey: Guid(602a250ce459d2e4c8772eb48b162b20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/StylizedGround/Materials/SGT_Winter_Ground_3.mat using Guid(602a250ce459d2e4c8772eb48b162b20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd6c5f30a48dea216116368fdfd25990') in 0.052673 seconds 
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Epic Toon FX/Materials/Emoticons/clenchteeth.mat
+  artifactKey: Guid(4d8841c90e364394aa00e243261e802b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Emoticons/clenchteeth.mat using Guid(4d8841c90e364394aa00e243261e802b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c67e84efc318ebed729b68b3b56be53') in 0.025292 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/PolygonSciFiSpace/Materials/Misc/PolygonScifiSpace_Material_Grey.mat
+  artifactKey: Guid(5de63e102847964469ac405410d914eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/PolygonSciFiSpace/Materials/Misc/PolygonScifiSpace_Material_Grey.mat using Guid(5de63e102847964469ac405410d914eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b9b24a43eced22ac8798a09f4298476') in 0.015962 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Main/Materials/Planet/StonePlanet_aMat.mat
+  artifactKey: Guid(c61fc44fcdb9e484ba0f85fd68f0ab5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Main/Materials/Planet/StonePlanet_aMat.mat using Guid(c61fc44fcdb9e484ba0f85fd68f0ab5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e355965cc52b2e5d6b7d3858457eb531') in 1.283868 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Main/Planets/Raw/Polygon Planets Pack/Materials/Demo_solar_system_materials/water_mat 1.mat
+  artifactKey: Guid(17d48390dce06df47a59d7e3cf861137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Main/Planets/Raw/Polygon Planets Pack/Materials/Demo_solar_system_materials/water_mat 1.mat using Guid(17d48390dce06df47a59d7e3cf861137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '023ca1c83aa3bc3d3f72e54ae139706a') in 0.030031 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/PolygonSciFiSpace/Materials/Alts/PolygonScifiSpace_Material_02_D.mat
+  artifactKey: Guid(bcaa4f37939a5bf42b5fb1a833c5714e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/PolygonSciFiSpace/Materials/Alts/PolygonScifiSpace_Material_02_D.mat using Guid(bcaa4f37939a5bf42b5fb1a833c5714e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60f47773fa8d48dab6e1bd83a2d18fa3') in 0.032224 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Main/Planets/Raw/Polygon Planets Pack/Materials/Demo_solar_system_materials/ground_mat 2.mat
+  artifactKey: Guid(ccc0f7ce84e6b2541a7289fa15243901) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Main/Planets/Raw/Polygon Planets Pack/Materials/Demo_solar_system_materials/ground_mat 2.mat using Guid(ccc0f7ce84e6b2541a7289fa15243901) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f5b3abdee93c2f7ea67ebc1c584aff1') in 0.017516 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Main/Planets/Raw/Polygon Planets Pack/Materials/sand_mat.mat
+  artifactKey: Guid(00746aebdbb482d4b914947e33048cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Main/Planets/Raw/Polygon Planets Pack/Materials/sand_mat.mat using Guid(00746aebdbb482d4b914947e33048cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '567409859a7b5e8c86d68adf24823d63') in 0.011958 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Main/Planets/Raw/Polygon Planets Pack/Materials/Demo_solar_system_materials/ground_mat 6.mat
+  artifactKey: Guid(f1eabaefab3b1b449b12e36614865c1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Main/Planets/Raw/Polygon Planets Pack/Materials/Demo_solar_system_materials/ground_mat 6.mat using Guid(f1eabaefab3b1b449b12e36614865c1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93ff3bc3d9db567e351ffca007fdc13a') in 0.019311 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Epic Toon FX/Materials/Emoticons/laughsweatdrop.mat
+  artifactKey: Guid(5a1f696c767421147bad0bc8af0b60e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Emoticons/laughsweatdrop.mat using Guid(5a1f696c767421147bad0bc8af0b60e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '750ae257f081a61065130801a2609a1d') in 0.029675 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Main/Planets/Raw/Polygon Planets Pack/Materials/sun_mat.mat
+  artifactKey: Guid(a9ed31c47968c6849b404b088c905e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Main/Planets/Raw/Polygon Planets Pack/Materials/sun_mat.mat using Guid(a9ed31c47968c6849b404b088c905e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60a93ddb663a98acf725319188c38696') in 0.139337 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Main/Planets/Raw/Pine Tree Pack/FBX/PineTree1.fbx
+  artifactKey: Guid(86b2d7e01f0c03445aa1178c1a96a5de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Main/Planets/Raw/Pine Tree Pack/FBX/PineTree1.fbx using Guid(86b2d7e01f0c03445aa1178c1a96a5de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26b728d8c6fc09c05e2b0e4fb91a4769') in 0.031931 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Epic Toon FX/Materials/Glows/lightray.mat
+  artifactKey: Guid(bc14231efc40c384ea470e5c723215de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Glows/lightray.mat using Guid(bc14231efc40c384ea470e5c723215de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78c0ae386ae283b33be4dcf85cbf0873') in 0.025500 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Epic Toon FX/Materials/Hearts/heart2broken.mat
+  artifactKey: Guid(6a130812fbd42b7489a4590c7b9cfd88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Hearts/heart2broken.mat using Guid(6a130812fbd42b7489a4590c7b9cfd88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6143e1d5df9d7efbd98d859d5ad940df') in 0.025866 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/PolygonSciFiSpace/Materials/Alts/PolygonScifiSpace_Material_02_C.mat
+  artifactKey: Guid(0c673a34921a40e41a11b1f96f70b371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/PolygonSciFiSpace/Materials/Alts/PolygonScifiSpace_Material_02_C.mat using Guid(0c673a34921a40e41a11b1f96f70b371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1a57de0622a3cfdc1554e7498631b65') in 0.041431 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Main/Materials/Planet/AsteroidMat.mat
+  artifactKey: Guid(96d2fa51d12c06f408d85df7396443be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Main/Materials/Planet/AsteroidMat.mat using Guid(96d2fa51d12c06f408d85df7396443be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7491df6a7b9197bc044f5d81cc5b31fe') in 0.056639 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/PolygonSciFiSpace/Materials/Planet_Materials/PolygonSpace_Sun.mat
+  artifactKey: Guid(20420331768a35e4db54bac675c22269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/PolygonSciFiSpace/Materials/Planet_Materials/PolygonSpace_Sun.mat using Guid(20420331768a35e4db54bac675c22269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d68e4dd8a830a691e352c284055d910') in 0.033677 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001537 seconds.
+  path: Assets/Main/Planets/Raw/Polygon Planets Pack/Meshes/Asteroid_Belts/asteroid_belt_1.fbx
+  artifactKey: Guid(9f14283285ba1724e9a86477fda609e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Main/Planets/Raw/Polygon Planets Pack/Meshes/Asteroid_Belts/asteroid_belt_1.fbx using Guid(9f14283285ba1724e9a86477fda609e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d222951888e4fba240fcb007743b6e4') in 0.024239 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Epic Toon FX/Materials/Misc/ice_spikes.mat
+  artifactKey: Guid(df49654d9efe3fa4d8511bd148caabf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Misc/ice_spikes.mat using Guid(df49654d9efe3fa4d8511bd148caabf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '889cdd87e427698f987c7b1628ffcca8') in 0.037968 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Main/Resources/Prefabs/Stars/URPMode/Broken/Prefabs/brokenMat.mat
+  artifactKey: Guid(474f08cd5512be94daa3247b496dc2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Main/Resources/Prefabs/Stars/URPMode/Broken/Prefabs/brokenMat.mat using Guid(474f08cd5512be94daa3247b496dc2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ec9d0cb1ffebdc63de85444342b7d42') in 0.012251 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Epic Toon FX/Materials/Shield/shield_magic3.mat
+  artifactKey: Guid(139f4c1696c68e54390a5ad669273cab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Shield/shield_magic3.mat using Guid(139f4c1696c68e54390a5ad669273cab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '787f7fe626b38ca72de55332a847f631') in 0.024820 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/StylizedGround/Materials/SGT_Mud_1.mat
+  artifactKey: Guid(f1b050d2681abaf43b4c187491a0fff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/StylizedGround/Materials/SGT_Mud_1.mat using Guid(f1b050d2681abaf43b4c187491a0fff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48889179888ab48f200a49e8ac8077ca') in 0.050728 seconds 
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.002266 seconds.
+  path: Assets/Epic Toon FX/Materials/Text/pow.mat
+  artifactKey: Guid(302d3d9c80c53184396264abfad0da61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Text/pow.mat using Guid(302d3d9c80c53184396264abfad0da61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '655b2c980be4a79c22f9a2768b2b5d9a') in 0.024221 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Epic Toon FX/Materials/Portals/portal_glow_add.mat
+  artifactKey: Guid(b2e8acd4ba642d74a939033f33df790c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Portals/portal_glow_add.mat using Guid(b2e8acd4ba642d74a939033f33df790c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3b38575dd5285737518ad65bd46bca1') in 0.026973 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Epic Toon FX/Materials/Emoticons/drool.mat
+  artifactKey: Guid(d7f8f80b5b5817244a09e7fbf657da56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Emoticons/drool.mat using Guid(d7f8f80b5b5817244a09e7fbf657da56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e090013e2a235684a96389cb1e68346') in 0.028662 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Epic Toon FX/Materials/Clouds/cloud_2x2_soft.mat
+  artifactKey: Guid(719f8d52fe2e6b444b41c2f7a8fe587b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Clouds/cloud_2x2_soft.mat using Guid(719f8d52fe2e6b444b41c2f7a8fe587b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae25a9f7a6acfcc332d5a3c7d2702953') in 0.022570 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Epic Toon FX/Materials/Glows/glowALPHABLEND.mat
+  artifactKey: Guid(aee7f230a05bc8644854344e7c55f328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Glows/glowALPHABLEND.mat using Guid(aee7f230a05bc8644854344e7c55f328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff578fef958b8f2bd1285f5c0b028462') in 0.015229 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/StylizedGround/Materials/SGT_Tile_6.mat
+  artifactKey: Guid(c646413630877524b83ffdd0ec549573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/StylizedGround/Materials/SGT_Tile_6.mat using Guid(c646413630877524b83ffdd0ec549573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dbefaaec1bffa4c1d41306dfd8ee1a7') in 0.052945 seconds 
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Epic Toon FX/Materials/Fire/fire_soft.mat
+  artifactKey: Guid(f527801e80dd0814a9d5d318dbd03d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Fire/fire_soft.mat using Guid(f527801e80dd0814a9d5d318dbd03d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a0b1fe88b01dc9a266ec5e379b2288a') in 0.028584 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Epic Toon FX/Materials/Misc/evil_spirit.mat
+  artifactKey: Guid(d0a013cf4059c97419da65dc3619d49b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Misc/evil_spirit.mat using Guid(d0a013cf4059c97419da65dc3619d49b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c15158bfd0f0b8577a793f6dc5fe35f7') in 0.021622 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Epic Toon FX/Materials/Sparkle/sparkle_AB.mat
+  artifactKey: Guid(4408abb7a30b61a4a9a19dbb5f761d2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Sparkle/sparkle_AB.mat using Guid(4408abb7a30b61a4a9a19dbb5f761d2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2e920fd501b347361add0a1bcee13ca') in 0.022675 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Epic Toon FX/Materials/Emoticons/clenchteeth2.mat
+  artifactKey: Guid(7fa9df2d7badf0e47ba6805d48feaa73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Emoticons/clenchteeth2.mat using Guid(7fa9df2d7badf0e47ba6805d48feaa73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dac0bb09e7f25ab8484156d196a68a9e') in 0.025168 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Epic Toon FX/Materials/Text/sharp_red.mat
+  artifactKey: Guid(c8c5f86f3a7ff694faf5f45758f045de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Text/sharp_red.mat using Guid(c8c5f86f3a7ff694faf5f45758f045de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2deb0cbe1c507fbc5b917ff99ce172bd') in 0.025694 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Epic Toon FX/Materials/Confetti/confetti.mat
+  artifactKey: Guid(3625342a449601544b410357b8e7f201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Confetti/confetti.mat using Guid(3625342a449601544b410357b8e7f201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89d431b14616fe5ad3e0dfceefb72f8c') in 0.021789 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001329 seconds.
+  path: Assets/Epic Toon FX/Materials/Sparkle/sparkle_ADD.mat
+  artifactKey: Guid(a976a44ca501e564bb2adee42f573b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Sparkle/sparkle_ADD.mat using Guid(a976a44ca501e564bb2adee42f573b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5241c3f2bf7bdee71cefb4a2bbd50b22') in 0.015692 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Main/Planets/Raw/Polygon Planets Pack/Materials/Demo_solar_system_materials/sand_mat1.mat
+  artifactKey: Guid(5b0d33e223827cd4896533021f1cd943) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Main/Planets/Raw/Polygon Planets Pack/Materials/Demo_solar_system_materials/sand_mat1.mat using Guid(5b0d33e223827cd4896533021f1cd943) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dad9a1baf7a3b3128c68fb05fa8faa3') in 0.017895 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/StylizedGround/Materials/SGT_Tile_1.mat
+  artifactKey: Guid(e1f924e46aa1aa942946f9bb17e1dbc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/StylizedGround/Materials/SGT_Tile_1.mat using Guid(e1f924e46aa1aa942946f9bb17e1dbc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aae34f256ab7879e621c138250c63394') in 0.051994 seconds 
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Epic Toon FX/Materials/Geometric/spiky.mat
+  artifactKey: Guid(0d1ddda4d4cb8074785f0e3aece5c9ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Geometric/spiky.mat using Guid(0d1ddda4d4cb8074785f0e3aece5c9ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a470c8c0b10fd07b1c1e856d4a71217') in 0.020396 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Main/Planets/Raw/Polygon Planets Pack/Materials/Demo_solar_system_materials/ground_mat 13.mat
+  artifactKey: Guid(74db8d3eb55f6614ebeda041a23d8c69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Main/Planets/Raw/Polygon Planets Pack/Materials/Demo_solar_system_materials/ground_mat 13.mat using Guid(74db8d3eb55f6614ebeda041a23d8c69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43456bf427a3afdbefbe1a97776c4564') in 0.016120 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Main/SkyBox/Materials/Skybox.mat
+  artifactKey: Guid(81f714daf7144784b8a2f42f1cd30927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Main/SkyBox/Materials/Skybox.mat using Guid(81f714daf7144784b8a2f42f1cd30927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '957757aec98cd2bb1574548725329703') in 0.530165 seconds 
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Epic Toon FX/Materials/Emoticons/bigsmile.mat
+  artifactKey: Guid(5691aad654871084bb7f84be6dc98391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Emoticons/bigsmile.mat using Guid(5691aad654871084bb7f84be6dc98391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6b9c0d9a2ae9237dcbe4932d8796ccd') in 0.024512 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/StylizedGround/Materials/SGT_Sand_3.mat
+  artifactKey: Guid(99fce07f2ada2be4a83389c8cf91fd00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/StylizedGround/Materials/SGT_Sand_3.mat using Guid(99fce07f2ada2be4a83389c8cf91fd00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea1b7f0d66b22bfe612b54d8478a7895') in 0.052197 seconds 
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Main/Planets/Raw/Polygon Planets Pack/Materials/Demo_solar_system_materials/lava_mat 13.mat
+  artifactKey: Guid(2721101f408999f4091b7659ad37f349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Main/Planets/Raw/Polygon Planets Pack/Materials/Demo_solar_system_materials/lava_mat 13.mat using Guid(2721101f408999f4091b7659ad37f349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa5c0481be735d9973c77829dd198475') in 0.018110 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/StylizedGround/Materials/SGT_Ground_3.mat
+  artifactKey: Guid(e1c5a81c54c1e0449a2f56a40ff3f5c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/StylizedGround/Materials/SGT_Ground_3.mat using Guid(e1c5a81c54c1e0449a2f56a40ff3f5c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42b0d62044b3a195f2d64c3192f84889') in 0.067584 seconds 
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Epic Toon FX/Materials/Hearts/heart2broken_blue.mat
+  artifactKey: Guid(0323e5c264fd5ba4b9d4150af19059a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Hearts/heart2broken_blue.mat using Guid(0323e5c264fd5ba4b9d4150af19059a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d80cd7048deaa82abbab107da8cda97') in 0.020930 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001677 seconds.
+  path: Assets/Epic Toon FX/Materials/money/coins.mat
+  artifactKey: Guid(d21e1066593e88b42aa47d95d827764b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/money/coins.mat using Guid(d21e1066593e88b42aa47d95d827764b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c161922fa038d713bdc0214ad79bad54') in 0.020243 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/StylizedGround/Materials/SGT_Grass_4.mat
+  artifactKey: Guid(cf836c4126726ef4886597e1dc604501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/StylizedGround/Materials/SGT_Grass_4.mat using Guid(cf836c4126726ef4886597e1dc604501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21c0309ea57f7d0d95f291862076e1d8') in 0.052061 seconds 
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Epic Toon FX/Materials/Confetti/confetti_blur.mat
+  artifactKey: Guid(fc4293af39df9df4ca4f1aab29b95913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Confetti/confetti_blur.mat using Guid(fc4293af39df9df4ca4f1aab29b95913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8901edb84c6911ccf2d3ae0e584d4c16') in 0.023927 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Epic Toon FX/Materials/Emoticons/sad.mat
+  artifactKey: Guid(c24fc9188f935a44ea02bbcc2c0e8cd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Emoticons/sad.mat using Guid(c24fc9188f935a44ea02bbcc2c0e8cd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bd065b76d80fef1f13b7eeaf33d3fe0') in 0.023839 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Epic Toon FX/Materials/Geometric/triangle.mat
+  artifactKey: Guid(6f795a8b392db5d4aa0bb026020ed093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Geometric/triangle.mat using Guid(6f795a8b392db5d4aa0bb026020ed093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c13e0f0ee78ad007d7b21fb87b907917') in 0.023478 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/PolygonSciFiSpace/Materials/Planet_Materials/PolygonSpace_Planet_Lines_03_C.mat
+  artifactKey: Guid(07dbc31265bdd59498403bb57aff3705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/PolygonSciFiSpace/Materials/Planet_Materials/PolygonSpace_Planet_Lines_03_C.mat using Guid(07dbc31265bdd59498403bb57aff3705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a5c845c7bf4d96e98f13ca4f631daa7') in 0.019405 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Epic Toon FX/Materials/Text/sharp_white.mat
+  artifactKey: Guid(e90b17dfed84ba44a86ade94a99606d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Text/sharp_white.mat using Guid(e90b17dfed84ba44a86ade94a99606d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2904e50e9bde7baaccb196b7161536c9') in 0.024764 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Main/Planets/Raw/Polygon Planets Pack/Materials/Demo_solar_system_materials/belt_mat 3.mat
+  artifactKey: Guid(008933bbcb05757448b3478ee788171a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Main/Planets/Raw/Polygon Planets Pack/Materials/Demo_solar_system_materials/belt_mat 3.mat using Guid(008933bbcb05757448b3478ee788171a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6590aa6ec2c44fa35548e0b7d644b866') in 0.016323 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/PolygonSciFiSpace/Materials/Alts/PolygonScifiSpace_SpaceStation_02.mat
+  artifactKey: Guid(d8bdf050592abfc43b8feb9e1f4cb741) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/PolygonSciFiSpace/Materials/Alts/PolygonScifiSpace_SpaceStation_02.mat using Guid(d8bdf050592abfc43b8feb9e1f4cb741) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b73c1f376b977f723639ec93d80fce91') in 0.053471 seconds 
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Epic Toon FX/Materials/Bubbles/bubble_round2.mat
+  artifactKey: Guid(daba5687afb2ea24f95d16146dce6cc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Bubbles/bubble_round2.mat using Guid(daba5687afb2ea24f95d16146dce6cc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b365e9896b8e0f6df8e832fcfa4e075') in 0.023567 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Epic Toon FX/Materials/Hearts/heart2.mat
+  artifactKey: Guid(4e47fdfe66dd2a046986da0de1ef7495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Hearts/heart2.mat using Guid(4e47fdfe66dd2a046986da0de1ef7495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf7a46466fc9534b42f70f4c761bed6c') in 0.024937 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/PolygonSciFiSpace/Materials/Alts/PolygonScifiSpace_Material_02_F.mat
+  artifactKey: Guid(4e487708cce33b647b13149ee619e642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/PolygonSciFiSpace/Materials/Alts/PolygonScifiSpace_Material_02_F.mat using Guid(4e487708cce33b647b13149ee619e642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5cc8126360979601e94d345e246f95a') in 0.022854 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Main/Planets/Raw/Polygon Planets Pack/Materials/Crystals_mat.mat
+  artifactKey: Guid(b851b074126c6d74a9d6b3d06f6ec85a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Main/Planets/Raw/Polygon Planets Pack/Materials/Crystals_mat.mat using Guid(b851b074126c6d74a9d6b3d06f6ec85a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3374eee4e285448fb9b32d6bb6ed109') in 0.013152 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Epic Toon FX/Materials/Fire/fire_ground_softest3x3.mat
+  artifactKey: Guid(5edf226ac70c7b34caa8d18d2be01582) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Fire/fire_ground_softest3x3.mat using Guid(5edf226ac70c7b34caa8d18d2be01582) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b923db13c08578f25c89c4f961fd0973') in 0.024595 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001325 seconds.
+  path: Assets/Epic Toon FX/Materials/Geometric/drop.mat
+  artifactKey: Guid(905e6862ab8669349a39d55c5727be31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Geometric/drop.mat using Guid(905e6862ab8669349a39d55c5727be31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b83591cb8144bcbcdedffe0663ff8f3f') in 0.021304 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/PolygonSciFiSpace/Materials/Planet_Materials/PolygonSpace_Planet_Lines_03_B.mat
+  artifactKey: Guid(75b88a7ae0f30754ca4709a6f380d872) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/PolygonSciFiSpace/Materials/Planet_Materials/PolygonSpace_Planet_Lines_03_B.mat using Guid(75b88a7ae0f30754ca4709a6f380d872) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c76341f5b46e4abce256d43fbf5b406') in 0.017478 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Epic Toon FX/Materials/Clouds/cloud_soft.mat
+  artifactKey: Guid(c1254d407233159489f0bfdd68ac2975) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Clouds/cloud_soft.mat using Guid(c1254d407233159489f0bfdd68ac2975) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ce2c61309b76b7f2cf699f1901d65ae') in 0.021823 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Main/Materials/Planet/SunMat.mat
+  artifactKey: Guid(f0ede16910ffb994cb31b3f376d7ab86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Main/Materials/Planet/SunMat.mat using Guid(f0ede16910ffb994cb31b3f376d7ab86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '301a69766fa4b3feb4131474b80630b6') in 0.026496 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Epic Toon FX/Demo/Materials/Skybox/BlueSkybox.mat
+  artifactKey: Guid(2c308a3b06c530748acc49e5e317ee58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Demo/Materials/Skybox/BlueSkybox.mat using Guid(2c308a3b06c530748acc49e5e317ee58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '189172514f07dd6a0c8d7f4c325d77dd') in 0.020414 seconds 
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/PolygonSciFiSpace/Materials/PolygonScifiSpace_Material_03_A.mat
+  artifactKey: Guid(82a7ccffd2fed3e47ae444f4d5b0e027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/PolygonSciFiSpace/Materials/PolygonScifiSpace_Material_03_A.mat using Guid(82a7ccffd2fed3e47ae444f4d5b0e027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1191e82029f510b9f6947ccb46614877') in 0.779290 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Epic Toon FX/Materials/Glows/glow2.mat
+  artifactKey: Guid(b29e688b444288148ad46d4aae66cffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Glows/glow2.mat using Guid(b29e688b444288148ad46d4aae66cffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'affe6f9225aab0950450bee95f446455') in 0.024437 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Epic Toon FX/Materials/Fire/fire_soft_blank_additive.mat
+  artifactKey: Guid(9991708de0e9fac438dc04d0161723ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Fire/fire_soft_blank_additive.mat using Guid(9991708de0e9fac438dc04d0161723ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '765e1458b9533b675ba3b2344cca3baf') in 0.027079 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Epic Toon FX/Materials/Fire/fire2x2.mat
+  artifactKey: Guid(d96c4862423281f4f98b249576ae786c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Fire/fire2x2.mat using Guid(d96c4862423281f4f98b249576ae786c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcf5c1e1195ae39784ee6968ee8485c8') in 0.026873 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Epic Toon FX/Materials/Bubbles/bubble_half_clear.mat
+  artifactKey: Guid(17a51b7e0fd51c541b24cc33e181a0a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Bubbles/bubble_half_clear.mat using Guid(17a51b7e0fd51c541b24cc33e181a0a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45c8a6a617474fb63ca4b35f7c183c07') in 0.021635 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Epic Toon FX/Materials/Portals/portal_stripes4.mat
+  artifactKey: Guid(39486fb106e196144a2ccac41cb23718) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Portals/portal_stripes4.mat using Guid(39486fb106e196144a2ccac41cb23718) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2970f0628df9eddbc4cd36bf63b5ef9') in 0.025656 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/PolygonSciFiSpace/Materials/Alts/PolygonScifiSpace_Material_04_F.mat
+  artifactKey: Guid(27935e4f4ec5bd848acb1c16b91ff694) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/PolygonSciFiSpace/Materials/Alts/PolygonScifiSpace_Material_04_F.mat using Guid(27935e4f4ec5bd848acb1c16b91ff694) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40ac6565e434e2ea0f84c4170fc2e657') in 0.039426 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Epic Toon FX/Materials/Portals/portal_stripes2.mat
+  artifactKey: Guid(40638a949c8dbee459e4c1587e0de6ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Portals/portal_stripes2.mat using Guid(40638a949c8dbee459e4c1587e0de6ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13937caf59903fe62dc15b491c7a9256') in 0.026085 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Main/SkyBox/Materials/PurpleSkybox.mat
+  artifactKey: Guid(ddbba50f136a8ac48bbc12cb675729b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Main/SkyBox/Materials/PurpleSkybox.mat using Guid(ddbba50f136a8ac48bbc12cb675729b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a898f517219c4d6551236f1b1880ad30') in 0.019625 seconds 
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Epic Toon FX/Models/Materials/sphereshield.mat
+  artifactKey: Guid(92dc7fbd3f5333a47915e30a7d7be381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Models/Materials/sphereshield.mat using Guid(92dc7fbd3f5333a47915e30a7d7be381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26eb2acf491a129b07819d3b11673802') in 0.018533 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Main/Planets/Raw/Polygon Planets Pack/Materials/Demo_solar_system_materials/lava_mat_14.mat
+  artifactKey: Guid(a5b038b4078a934458a8e600e9041e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Main/Planets/Raw/Polygon Planets Pack/Materials/Demo_solar_system_materials/lava_mat_14.mat using Guid(a5b038b4078a934458a8e600e9041e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '480e1bae01a87797e218fd9e2801069f') in 0.017487 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Epic Toon FX/Materials/Geometric/circlestretchy.mat
+  artifactKey: Guid(c69a36694c3d44847ae1097a253e3d56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Geometric/circlestretchy.mat using Guid(c69a36694c3d44847ae1097a253e3d56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b29abdd1ae57bcd70fa14d00a267f232') in 0.021193 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/PolygonSciFiSpace/Materials/Alts/PolygonScifiSpace_Material_01_C.mat
+  artifactKey: Guid(ed3bd972f89e47e42843b13fe786b1bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/PolygonSciFiSpace/Materials/Alts/PolygonScifiSpace_Material_01_C.mat using Guid(ed3bd972f89e47e42843b13fe786b1bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5180445d65d5e4377305e972af89bb3') in 0.031516 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Epic Toon FX/Materials/Misc/nova_3x3_spritesheet.mat
+  artifactKey: Guid(da7ddd9092467374182355e1178b192e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Misc/nova_3x3_spritesheet.mat using Guid(da7ddd9092467374182355e1178b192e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6001b497f15cd2f91e31f2ae11b2da34') in 0.036267 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Main/Planets/Raw/Polygon Planets Pack/Meshes/Asteroid_Belts/asteroid_belt_9.fbx
+  artifactKey: Guid(2c26a2f91992da54eb7b98755a916fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Main/Planets/Raw/Polygon Planets Pack/Meshes/Asteroid_Belts/asteroid_belt_9.fbx using Guid(2c26a2f91992da54eb7b98755a916fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae5bf07de3d80064ccf0b22c149bf8e8') in 0.024478 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Epic Toon FX/Materials/Stars/star_outlined_colored.mat
+  artifactKey: Guid(cbc52801184e2f140a2340e2d106207b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Stars/star_outlined_colored.mat using Guid(cbc52801184e2f140a2340e2d106207b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d6668304224281d907ddcb738c75ccb') in 0.021867 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Epic Toon FX/Materials/Stars/star_ADD.mat
+  artifactKey: Guid(f977d103ddb4f804f84d689a9f2d20ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Stars/star_ADD.mat using Guid(f977d103ddb4f804f84d689a9f2d20ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63fb4586a518206fed11c59e6c177a3e') in 0.015290 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/PolygonSciFiSpace/Materials/Alts/PolygonScifiSpace_Material_04_B.mat
+  artifactKey: Guid(e871de2d3a078f445b028b75b70ee154) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/PolygonSciFiSpace/Materials/Alts/PolygonScifiSpace_Material_04_B.mat using Guid(e871de2d3a078f445b028b75b70ee154) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9098da2f8e194c7dc9cfad1d121c460') in 0.032498 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/PolygonSciFiSpace/Materials/PolygonScifiSpace_Material_04_A.mat
+  artifactKey: Guid(73847fc4fb99162448a1fe0fd636c712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/PolygonSciFiSpace/Materials/PolygonScifiSpace_Material_04_A.mat using Guid(73847fc4fb99162448a1fe0fd636c712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc167fd3cda6d52a3a89399b911fd162') in 0.035175 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Main/Planets/Raw/Polygon Planets Pack/Materials/Demo_solar_system_materials/lava_mat_12.mat
+  artifactKey: Guid(88e9eee7848c18f46bb04e06668fe84d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Main/Planets/Raw/Polygon Planets Pack/Materials/Demo_solar_system_materials/lava_mat_12.mat using Guid(88e9eee7848c18f46bb04e06668fe84d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d85048f7bb24208b5bdffe9307947e5') in 0.017390 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Epic Toon FX/Materials/Portals/portal_stripes3.mat
+  artifactKey: Guid(1375e13c1d3ea904a940ee9ca3efb692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Portals/portal_stripes3.mat using Guid(1375e13c1d3ea904a940ee9ca3efb692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '415a913d0b154931b5f4946bbfc9c546') in 0.026358 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Epic Toon FX/Materials/Emoticons/cry.mat
+  artifactKey: Guid(c98e44ac41ae3d541863cc2a3dc1596b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Emoticons/cry.mat using Guid(c98e44ac41ae3d541863cc2a3dc1596b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91cdd1a3db9ff37a96e4581d737dbb50') in 0.024395 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Epic Toon FX/Materials/Emoticons/cool.mat
+  artifactKey: Guid(b4f1adaa536553c48b2f5173e9537d38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Emoticons/cool.mat using Guid(b4f1adaa536553c48b2f5173e9537d38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c22e112cc123722e78a37d10d2c0798') in 0.023650 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Epic Toon FX/Models/Materials/ARPG FX.mat
+  artifactKey: Guid(6aca12c0ef0ab394ea41be2b36c09680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Models/Materials/ARPG FX.mat using Guid(6aca12c0ef0ab394ea41be2b36c09680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1585b42241ff7909b8a62b0904ca27a3') in 0.015830 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/PolygonSciFiSpace/Materials/Alts/PolygonScifiSpace_Sign_01_D.mat
+  artifactKey: Guid(f3ed1cfe4f132644ea3ab6952075de93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/PolygonSciFiSpace/Materials/Alts/PolygonScifiSpace_Sign_01_D.mat using Guid(f3ed1cfe4f132644ea3ab6952075de93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7c42557ae0593552208990e816c535f') in 0.023455 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Epic Toon FX/Materials/Misc/aura_vertical_soft.mat
+  artifactKey: Guid(9d5f3d715091cd34e97ba2941c6fb73f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Misc/aura_vertical_soft.mat using Guid(9d5f3d715091cd34e97ba2941c6fb73f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '698c897fd7acfb788bbb320b263f9663') in 0.021169 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Epic Toon FX/Materials/Misc/ring (alphablended).mat
+  artifactKey: Guid(38e56bf2eab142445b49494feef54492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Misc/ring (alphablended).mat using Guid(38e56bf2eab142445b49494feef54492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16e3d0c389c147abe474e12de2ca0d88') in 0.015878 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/PolygonSciFiSpace/Materials/PolygonScifiSpace_SpaceStation_01.mat
+  artifactKey: Guid(32325f89619e00e4a8b9d25be264cfdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/PolygonSciFiSpace/Materials/PolygonScifiSpace_SpaceStation_01.mat using Guid(32325f89619e00e4a8b9d25be264cfdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '799d227de89895048da33bd2248a3145') in 0.020558 seconds 
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Epic Toon FX/Materials/Misc/snowflake.mat
+  artifactKey: Guid(e886185bff410b84fa34b22a2dc8fbb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Misc/snowflake.mat using Guid(e886185bff410b84fa34b22a2dc8fbb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a50eb30cdad0d406b44887c71b773065') in 0.021774 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Epic Toon FX/Materials/Misc/grab2.mat
+  artifactKey: Guid(b18036fb1921bf44aa1e636f1bf63a2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Misc/grab2.mat using Guid(b18036fb1921bf44aa1e636f1bf63a2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c294e8171ac8615cf3b9e3bef8a44f6') in 0.021379 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/StylizedGround/Materials/SGT_Sand_2.mat
+  artifactKey: Guid(17bb4dc3ff262c5429603646aea15970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/StylizedGround/Materials/SGT_Sand_2.mat using Guid(17bb4dc3ff262c5429603646aea15970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78346e545cec1e9370c5836c52220c57') in 0.051712 seconds 
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Epic Toon FX/Materials/Misc/grab1.mat
+  artifactKey: Guid(77478f55d3312d54180320d311f35fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Misc/grab1.mat using Guid(77478f55d3312d54180320d311f35fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2223c60a688786f077b29198bed2dfc') in 0.022795 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/StylizedGround/Materials/SGT_Grass_1.mat
+  artifactKey: Guid(583ad1c5667282643a0d2975ac485cca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/StylizedGround/Materials/SGT_Grass_1.mat using Guid(583ad1c5667282643a0d2975ac485cca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '336918ad436a148703640a3a6b339aad') in 0.053152 seconds 
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Epic Toon FX/Materials/Portals/portal_stripes5.mat
+  artifactKey: Guid(8fae4fb1d1b9afb4999346fec67a32f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Epic Toon FX/Materials/Portals/portal_stripes5.mat using Guid(8fae4fb1d1b9afb4999346fec67a32f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27115ab2ddb3b83207f9b91ea911eaca') in 0.025735 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Main/Planets/Raw/Polygon Planets Pack/Materials/Demo_solar_system_materials/orbits_mat.mat
+  artifactKey: Guid(b8866c9ac81c4e3499e95ce5daee40e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Main/Planets/Raw/Polygon Planets Pack/Materials/Demo_solar_system_materials/orbits_mat.mat using Guid(b8866c9ac81c4e3499e95ce5daee40e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e14f51c0342776ee639d0c2e400b11a') in 0.016836 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/PolygonSciFiSpace/Materials/Alts/PolygonScifiSpace_Material_Dirt_01.mat
+  artifactKey: Guid(138e0aae3526bd54687107ed3fc9877c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/PolygonSciFiSpace/Materials/Alts/PolygonScifiSpace_Material_Dirt_01.mat using Guid(138e0aae3526bd54687107ed3fc9877c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da2787b63f530553e8142727e6811373') in 0.027804 seconds 
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/PolygonSciFiSpace/Materials/Alts/PolygonScifiSpace_Material_01_E.mat
+  artifactKey: Guid(475a38ac09e45e34190d59c017dadc53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/PolygonSciFiSpace/Materials/Alts/PolygonScifiSpace_Material_01_E.mat using Guid(475a38ac09e45e34190d59c017dadc53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1e960e4021f8a6b55e94c6e6aae2bec') in 0.032775 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Main/SkyBox/Materials/PolygonScifiSpace_Skybox_01.mat
+  artifactKey: Guid(142397bd25cf70c4a9fe0c954934f343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Main/SkyBox/Materials/PolygonScifiSpace_Skybox_01.mat using Guid(142397bd25cf70c4a9fe0c954934f343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eef7f97a49fd2eca769e57082c0e90a') in 0.020909 seconds 
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Main/Planets/Raw/Polygon Planets Pack/Materials/ring_mat.mat
+  artifactKey: Guid(c13d927044cc05e4d990da0bff495601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Main/Planets/Raw/Polygon Planets Pack/Materials/ring_mat.mat using Guid(c13d927044cc05e4d990da0bff495601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3623c2f0319c4ec40f746928cb4ab05a') in 0.017371 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/PolygonSciFiSpace/Materials/PolygonScifiSpace_Ship_04_A.mat
+  artifactKey: Guid(daaabb76cd1ab0f43a9b8bb4f9daed35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/PolygonSciFiSpace/Materials/PolygonScifiSpace_Ship_04_A.mat using Guid(daaabb76cd1ab0f43a9b8bb4f9daed35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6158929f2aad1d5fb8f41d3a637ba9cc') in 1.050635 seconds 
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006881 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.26 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.416 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1417ms)
+		BeginReloadAssembly (140ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (1183ms)
+			LoadAssemblies (94ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (245ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (743ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (63ms)
+				ProcessInitializeOnLoadAttributes (581ms)
+				ProcessInitializeOnLoadMethodAttributes (75ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.33 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4882 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 61 unused Assets / (307.1 KB). Loaded Objects now: 5584.
+Memory consumption went from 219.9 MB to 219.6 MB.
+Total: 3.006600 ms (FindLiveObjects: 0.404700 ms CreateObjectMapping: 0.521200 ms MarkObjects: 2.004600 ms  DeleteObjects: 0.075300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: 6b0e35c9178b02a6363f3721b7b8e397 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010420 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.31 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.394 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1395ms)
+		BeginReloadAssembly (160ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (1157ms)
+			LoadAssemblies (100ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (243ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (724ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (57ms)
+				ProcessInitializeOnLoadAttributes (574ms)
+				ProcessInitializeOnLoadMethodAttributes (69ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.35 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4868 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (307.2 KB). Loaded Objects now: 5587.
+Memory consumption went from 218.5 MB to 218.2 MB.
+Total: 3.275000 ms (FindLiveObjects: 0.438600 ms CreateObjectMapping: 0.462100 ms MarkObjects: 2.298700 ms  DeleteObjects: 0.074500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: 6b0e35c9178b02a6363f3721b7b8e397 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007203 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.21 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.389 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1390ms)
+		BeginReloadAssembly (162ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (53ms)
+		EndReloadAssembly (1148ms)
+			LoadAssemblies (104ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (247ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (720ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (56ms)
+				ProcessInitializeOnLoadAttributes (572ms)
+				ProcessInitializeOnLoadMethodAttributes (69ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.29 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4868 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (307.2 KB). Loaded Objects now: 5590.
+Memory consumption went from 218.5 MB to 218.2 MB.
+Total: 3.396900 ms (FindLiveObjects: 0.462900 ms CreateObjectMapping: 0.437300 ms MarkObjects: 2.389500 ms  DeleteObjects: 0.106000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: 6b0e35c9178b02a6363f3721b7b8e397 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006876 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.25 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.353 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1354ms)
+		BeginReloadAssembly (137ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (1143ms)
+			LoadAssemblies (97ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (242ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (717ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (56ms)
+				ProcessInitializeOnLoadAttributes (569ms)
+				ProcessInitializeOnLoadMethodAttributes (68ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.34 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4868 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (307.1 KB). Loaded Objects now: 5593.
+Memory consumption went from 218.5 MB to 218.2 MB.
+Total: 3.012800 ms (FindLiveObjects: 0.468400 ms CreateObjectMapping: 0.472700 ms MarkObjects: 1.966600 ms  DeleteObjects: 0.104600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: 6b0e35c9178b02a6363f3721b7b8e397 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006922 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.32 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.349 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1350ms)
+		BeginReloadAssembly (132ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (1143ms)
+			LoadAssemblies (97ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (242ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (722ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (58ms)
+				ProcessInitializeOnLoadAttributes (576ms)
+				ProcessInitializeOnLoadMethodAttributes (66ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.25 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4868 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (307.1 KB). Loaded Objects now: 5596.
+Memory consumption went from 218.3 MB to 218.0 MB.
+Total: 3.000500 ms (FindLiveObjects: 0.472000 ms CreateObjectMapping: 0.399400 ms MarkObjects: 2.059100 ms  DeleteObjects: 0.069100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: 6b0e35c9178b02a6363f3721b7b8e397 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007540 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.23 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.333 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1333ms)
+		BeginReloadAssembly (133ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (1125ms)
+			LoadAssemblies (99ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (233ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (711ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (54ms)
+				ProcessInitializeOnLoadAttributes (566ms)
+				ProcessInitializeOnLoadMethodAttributes (68ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.24 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4868 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (307.2 KB). Loaded Objects now: 5599.
+Memory consumption went from 218.5 MB to 218.2 MB.
+Total: 2.987700 ms (FindLiveObjects: 0.451100 ms CreateObjectMapping: 0.411400 ms MarkObjects: 2.050400 ms  DeleteObjects: 0.074200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: 6b0e35c9178b02a6363f3721b7b8e397 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007594 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.27 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.344 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1344ms)
+		BeginReloadAssembly (131ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (1130ms)
+			LoadAssemblies (95ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (239ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (716ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (55ms)
+				ProcessInitializeOnLoadAttributes (569ms)
+				ProcessInitializeOnLoadMethodAttributes (69ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.33 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4868 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (307.2 KB). Loaded Objects now: 5602.
+Memory consumption went from 218.5 MB to 218.2 MB.
+Total: 2.919300 ms (FindLiveObjects: 0.457700 ms CreateObjectMapping: 0.414900 ms MarkObjects: 1.967100 ms  DeleteObjects: 0.078800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: 6b0e35c9178b02a6363f3721b7b8e397 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006681 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 2.21 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.364 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1365ms)
+		BeginReloadAssembly (135ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (1151ms)
+			LoadAssemblies (96ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (246ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (727ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (20ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (58ms)
+				ProcessInitializeOnLoadAttributes (571ms)
+				ProcessInitializeOnLoadMethodAttributes (72ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.27 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4868 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (307.2 KB). Loaded Objects now: 5605.
+Memory consumption went from 218.5 MB to 218.2 MB.
+Total: 2.979500 ms (FindLiveObjects: 0.414900 ms CreateObjectMapping: 0.500900 ms MarkObjects: 1.927800 ms  DeleteObjects: 0.135100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: 6b0e35c9178b02a6363f3721b7b8e397 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
