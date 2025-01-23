@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "F:\\LittleBee-master\\Server\\GateServer\\GateServer.csproj",
+    "projectUniqueName": "F:\\mylockedstep\\Server\\GateServer\\GateServer.csproj",
     "projectName": "GateServer",
-    "projectPath": "F:\\LittleBee-master\\Server\\GateServer\\GateServer.csproj",
-    "outputPath": "F:\\LittleBee-master\\Server\\GateServer\\obj\\",
+    "projectPath": "F:\\mylockedstep\\Server\\GateServer\\GateServer.csproj",
+    "outputPath": "F:\\mylockedstep\\Server\\GateServer\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
