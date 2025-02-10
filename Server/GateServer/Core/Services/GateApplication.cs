@@ -3,6 +3,7 @@ using LiteNetLib;
 using System;
 using System.Collections.Generic;
 using System.Net;
+using System.Net.Mime;
 using System.Net.Sockets;
 using Net;
 using Net.ServiceImpl;
@@ -93,6 +94,7 @@ namespace Synchronize.Game.Lockstep.GateServer.Services
             if (System.IO.File.Exists("Startup.json"))
             {
                 string startUpJson = System.IO.File.ReadAllText("Startup.json");
+                
                 StartupConfigs = JsonMapper.ToObject<Dictionary<string,string>>(startUpJson);
                 if (StartupConfigs == null)
                 {

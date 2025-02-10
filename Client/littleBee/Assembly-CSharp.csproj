@@ -41,10 +41,6 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="F:\mylockedstep\Client\littleBee\Assets\Plugins\General.dll" />
-    <Analyzer Include="F:\mylockedstep\Client\littleBee\Assets\Plugins\3rd\libs\LitJson.dll" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Assets\Epic Toon FX\Scripts\ETFXPitchRandomizer.cs" />
     <Compile Include="Assets\Scripts\Src\ECSR\Components\Common\Particle.cs" />
     <Compile Include="Assets\Scripts\Managers\Pool\PoolObject.cs" />
@@ -250,6 +246,84 @@
     <Compile Include="Assets\Scripts\Src\LockStep\Behaviours\ComponentsBackupBehaviour.cs" />
     <Compile Include="Assets\Scripts\Src\ECSR\Components\Common\Countdown.cs" />
     <Compile Include="Assets\Scripts\TrueSync\TSCircle.cs" />
+    <Compile Include="Assets\Scripts\General\Net\Pt\PtStringList.cs" />
+    <Compile Include="Assets\Scripts\General\Net\ServiceImpl\MessageEnums.cs" />
+    <Compile Include="Assets\Scripts\General\7zip\Compress\LZMA\LzmaBase.cs" />
+    <Compile Include="Assets\Scripts\General\Net\Pt\PtExtendMethods.cs" />
+    <Compile Include="Assets\Scripts\General\Net\Pt\PtErrorCode.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\Utils\FastBitConverter.cs" />
+    <Compile Include="Assets\Scripts\General\Utils\DateTimeUtils.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\NetPeer.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\BaseChannel.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\ConnectionRequest.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\Utils\NtpPacket.cs" />
+    <Compile Include="Assets\Scripts\General\Net\Pt\PtUInt16List.cs" />
+    <Compile Include="Assets\Scripts\General\Notify\Notifier.cs" />
+    <Compile Include="Assets\Scripts\General\Service\Event\ExtraObjectMessageEvt.cs" />
+    <Compile Include="Assets\Scripts\General\7zip\Compress\LZMA\LzmaEncoder.cs" />
+    <Compile Include="Assets\Scripts\General\Net\Pt\PtRoomList.cs" />
+    <Compile Include="Assets\Scripts\General\Net\NetStreamUtil.cs" />
+    <Compile Include="Assets\Scripts\General\7zip\Compress\RangeCoder\RangeCoderBit.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\Utils\INetSerializable.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\Utils\NetDataWriter.cs" />
+    <Compile Include="Assets\Scripts\General\ListIterator.cs" />
+    <Compile Include="Assets\Scripts\General\ILogger.cs" />
+    <Compile Include="Assets\Scripts\General\7zip\Compress\LZ\LzBinTree.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\Layers\PacketLayerBase.cs" />
+    <Compile Include="Assets\Scripts\General\7zip\Compress\LZMA\LzmaDecoder.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\ReliableChannel.cs" />
+    <Compile Include="Assets\Scripts\General\Misc\EnumVars.cs" />
+    <Compile Include="Assets\Scripts\General\7zip\Compress\LZ\IMatchFinder.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\Layers\Crc32cLayer.cs" />
+    <Compile Include="Assets\Scripts\General\7zip\Compress\LZ\LzOutWindow.cs" />
+    <Compile Include="Assets\Scripts\General\Net\Pt\PtKeyFrameCollectionList.cs" />
+    <Compile Include="Assets\Scripts\General\Net\Pt\PtKeyFrameCollection.cs" />
+    <Compile Include="Assets\Scripts\General\Net\Pt\PtUInt32List.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\Layers\XorEncryptLayer.cs" />
+    <Compile Include="Assets\Scripts\General\Evt\EventMgr.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\NetDebug.cs" />
+    <Compile Include="Assets\Scripts\General\Net\Pt\PtInt32List.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\SequencedChannel.cs" />
+    <Compile Include="Assets\Scripts\General\7zip\Common\CRC.cs" />
+    <Compile Include="Assets\Scripts\General\Net\Pt\PtFloatList.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\NetManager.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\NatPunchModule.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\Utils\NetSerializer.cs" />
+    <Compile Include="Assets\Scripts\General\7zip\Compress\RangeCoder\RangeCoderBitTree.cs" />
+    <Compile Include="Assets\Scripts\General\Service\Modules\HeartbeatModule.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\NetConstants.cs" />
+    <Compile Include="Assets\Scripts\General\7zip\Compress\RangeCoder\RangeCoder.cs" />
+    <Compile Include="Assets\Scripts\General\Net\Pt\PtRoom.cs" />
+    <Compile Include="Assets\Scripts\General\Net\Pt\PtRoomPlayer.cs" />
+    <Compile Include="Assets\Scripts\General\7zip\ICoder.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\INetEventListener.cs" />
+    <Compile Include="Assets\Scripts\General\Net\NetPacket.cs" />
+    <Compile Include="Assets\Scripts\General\7zip\Common\CommandLineParser.cs" />
+    <Compile Include="Assets\Scripts\General\Frame\FrameCommand.cs" />
+    <Compile Include="Assets\Scripts\General\Utils\Extends.cs" />
+    <Compile Include="Assets\Scripts\General\Net\Pt\PtLaunchGameData.cs" />
+    <Compile Include="Assets\Scripts\General\Service\Modules\BaseModule.cs" />
+    <Compile Include="Assets\Scripts\General\7zip\SevenZipHelper.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\NetPacket.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\Utils\NetPacketProcessor.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\Utils\CRC32C.cs" />
+    <Compile Include="Assets\Scripts\General\ByteBuffer.cs" />
+    <Compile Include="Assets\Scripts\General\Net\Pt\PtSearchHostResult.cs" />
+    <Compile Include="Assets\Scripts\General\Service\Event\UnconnectedNetMessageEvt.cs" />
+    <Compile Include="Assets\Scripts\General\Net\Pt\PtInt16List.cs" />
+    <Compile Include="Assets\Scripts\General\7zip\Common\OutBuffer.cs" />
+    <Compile Include="Assets\Scripts\General\Service\Event\NetMessageEvt.cs" />
+    <Compile Include="Assets\Scripts\General\7zip\Common\InBuffer.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\NetPacketPool.cs" />
+    <Compile Include="Assets\Scripts\General\Service\Core\BaseApplication.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\NetSocket.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\NetStatistics.cs" />
+    <Compile Include="Assets\Scripts\General\7zip\Compress\LZ\LzInWindow.cs" />
+    <Compile Include="Assets\Scripts\General\Net\Pt\FrameIdxInfo.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\NetUtils.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\Utils\NtpRequest.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\Utils\NetDataReader.cs" />
+    <Compile Include="Assets\Scripts\General\Net\PtMessagePackage.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\unity-simple-URP-pixelation-main\Shaders\Pixelize.shader" />
     <None Include="Assets\Epic Toon FX\Prefabs\Environment\Environment FX.txt" />
@@ -555,14 +629,11 @@
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>F:\mylockedstep\Client\littleBee\Library\PackageCache\com.unity.visualscripting@1.9.4\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>F:\mylockedstep\Client\littleBee\Assets\UnityPackages\JsonNet\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="General">
-      <HintPath>F:\mylockedstep\Client\littleBee\Assets\Plugins\General.dll</HintPath>
-    </Reference>
     <Reference Include="LitJson">
       <HintPath>F:\mylockedstep\Client\littleBee\Assets\Plugins\3rd\libs\LitJson.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>F:\mylockedstep\Client\littleBee\Assets\UnityPackages\JsonNet\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Android.Types">
       <HintPath>F:\Program Files\Unity 2021.3.42f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>

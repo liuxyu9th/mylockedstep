@@ -64,9 +64,9 @@ namespace Synchronize.Game.Lockstep
                 RotationSystem rotationSystem = new RotationSystem();
                 sim.GetBehaviour<EntityBehaviour>()
                     .AddSystem(fsmSystem)
-                    //.AddSystem(gravitySystem)
+                    .AddSystem(gravitySystem)
                     .AddSystem(moveSystem)
-                   // .AddSystem(starMovingSystem)
+                    .AddSystem(starMovingSystem)
                     .AddSystem(collisionSystem)
                     .AddSystem(macroWarSystem)
                     .AddSystem(microWarSystem)
@@ -76,9 +76,9 @@ namespace Synchronize.Game.Lockstep
                     .AddSystem(removeSystem);
                 sim.GetBehaviour<RollbackBehaviour>()
                     .AddSystem(fsmSystem)
-                   // .AddSystem(gravitySystem)
+                    .AddSystem(gravitySystem)
                     .AddSystem(moveSystem)
-                   // .AddSystem(starMovingSystem)
+                    .AddSystem(starMovingSystem)
                     .AddSystem(collisionSystem)
                     .AddSystem(macroWarSystem)
                     .AddSystem(microWarSystem)

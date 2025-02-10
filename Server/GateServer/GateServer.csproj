@@ -11,15 +11,16 @@
     <DefineConstants>TRACE;WAN_MODE;LAN_MODE</DefineConstants>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DefineConstants>TRACE;WAN_MODE;LAN_MODECOREAPP</DefineConstants>
+  </PropertyGroup>
+
   <ItemGroup>
-    <Reference Include="ConsoleLogger">
-      <HintPath>..\..\Common\ConsoleLogger\bin\Release\netstandard2.0\ConsoleLogger.dll</HintPath>
-    </Reference>
-    <Reference Include="General">
-      <HintPath>..\..\Common\General\General\bin\Release\netstandard2.0\General.dll</HintPath>
-    </Reference>
     <Reference Include="LitJson">
       <HintPath>..\..\Common\3rd\libs\LitJson.dll</HintPath>
+    </Reference>
+    <Reference Include="ServerDll, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>ServerDll.dll</HintPath>
     </Reference>
   </ItemGroup>
 
