@@ -24,6 +24,10 @@ namespace Synchronize.Game.Lockstep.MapEditor
                 {
                     transform.position = new Vector3(pos.Position.x.AsFloat(),0,pos.Position.y.AsFloat());
                 }
+                else
+                {
+                    return;
+                }
 
                 StarObjectRotation rot = World.GetComponentByEntityId<StarObjectRotation>(EntityId);
                 if(rot!=null)

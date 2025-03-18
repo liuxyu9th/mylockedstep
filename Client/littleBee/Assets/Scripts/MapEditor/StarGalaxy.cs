@@ -65,7 +65,7 @@ namespace Synchronize.Game.Lockstep.MapEditor
             {
                 beltInfos.Add(ast.m_Info);
             }
-
+            world.RemoveAllEntity();
             EntityManager.CreateMapEntity(world, starInfos, beltInfos,true);
         }
        
