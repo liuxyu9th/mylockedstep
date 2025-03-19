@@ -8,6 +8,7 @@ using TrueSync;
 using Synchronize.Game.Lockstep.Ecsr.Entitas;
 using Synchronize.Game.Lockstep.Ecsr.Components.Common;
 using Synchronize.Game.Lockstep.Ecsr.Components.Star;
+using Synchronize.Game.Lockstep.Managers;
 
 namespace Synchronize.Game.Lockstep.MapEditor
 {
@@ -26,6 +27,7 @@ namespace Synchronize.Game.Lockstep.MapEditor
                 }
                 else
                 {
+                    ModuleManager.GetModule<PoolModule>().Recycle(GetComponent<PoolObject>().GetFullName(), gameObject); 
                     return;
                 }
 

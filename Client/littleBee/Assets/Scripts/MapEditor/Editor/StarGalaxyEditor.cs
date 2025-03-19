@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 
@@ -22,6 +23,10 @@ namespace MapEditor.Editor
             {
                 galaxy.AddGamePrefab();
             }
+            if(GUILayout.Button("ClearGamePrefab"))
+            {
+                galaxy.ClearGamePrefab();
+            }
             if (GUILayout.Button("Export"))
             {
                 ExportStarInfos(galaxy);
@@ -34,6 +39,30 @@ namespace MapEditor.Editor
             {
                 ClearElements(galaxy);
             }
+            if(GUILayout.Button("Add"))
+            {
+                Add(galaxy);
+            }
+        }
+
+        private static void Add(StarGalaxy galaxy)
+        {
+            var list = galaxy.GetComponents<StarObject>();
+
+            StarObjectInfo tem;
+            if (list != null && list.Length > 0)
+            {
+                tem = StarObjectInfo.Read(StarObjectInfo.Write(list[list.Length - 1].m_Info));
+                tem.m_EntityId = tem.m_EntityId + 1;
+            }
+            else
+            {
+                tem = new StarObjectInfo();
+                tem.m_EntityId = 10000;
+            }
+
+            StarObject start = galaxy.AddComponent<StarObject>();
+            start.m_Info = tem;
         }
 
         private void ClearElements(StarGalaxy galaxy)
