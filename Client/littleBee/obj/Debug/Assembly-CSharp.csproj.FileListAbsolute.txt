@@ -1,2 +1,0 @@
-F:\mylockedstep\Client\littleBee\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-F:\mylockedstep\Client\littleBee\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
