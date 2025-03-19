@@ -5,3 +5,6 @@
 /Server/GateServer/.idea
 /Server/GateServer/obj
 /Client/littleBee/Logs
+/Client/littleBee/Assembly-CSharp.csproj
+/Client/littleBee/Assembly-CSharp.Player.csproj
+/Client/littleBee/obj
