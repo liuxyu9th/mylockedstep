@@ -77,6 +77,7 @@ namespace Synchronize.Game.Lockstep
         
         public void Run()
         {
+            // 运行模拟器的所有行为
             for (int i = 0; i < m_Behaviours.Count; ++i)
                 m_Behaviours[i].Update();
         }

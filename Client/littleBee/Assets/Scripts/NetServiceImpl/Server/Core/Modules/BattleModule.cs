@@ -5,6 +5,7 @@ using Net.Pt;
 using LiteNetLib;
 using System;
 using System.Net;
+using System.Threading;
 using Synchronize.Game.Lockstep.Service.Modules;
 using Synchronize.Game.Lockstep.Service.Core;
 using Synchronize.Game.Lockstep.Evt;
@@ -13,7 +14,6 @@ using Synchronize.Game.Lockstep.Misc;
 using Synchronize.Game.Lockstep.Frame;
 using Synchronize.Game.Lockstep.RoomServer.Core.Data;
 using Synchronize.Game.Lockstep.RoomServer.Services.Sim;
-
 namespace Synchronize.Game.Lockstep.RoomServer.Modules
 {
     /// <summary>
@@ -215,8 +215,12 @@ namespace Synchronize.Game.Lockstep.RoomServer.Modules
         /// 把缓存的关键帧刷新给各个客户端
         /// </summary>
         /// <param name="currentFrameIdx"></param>
+        
         public void FlushKeyFrame(int currentFrameIdx)
         {
+            int delay = 200;
+            
+            Thread.Sleep(260);
             Session.KeyFrameList.SetCurrentFrameIndex(currentFrameIdx);
             if (Session.QueueKeyFrameCollection.Count == 0) return;
             PtKeyFrameCollection flushCollection = new PtKeyFrameCollection() { FrameIdx = currentFrameIdx, KeyFrames = new List<FrameIdxInfo>() };

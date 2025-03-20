@@ -6,6 +6,7 @@ namespace Net.Pt
     /// <summary>
     /// 操作信息
     /// 用于网络通信
+    /// 用于表示哪个实体，做了什么操作
     /// </summary>
     public class FrameIdxInfo: IComparable<FrameIdxInfo>
     {

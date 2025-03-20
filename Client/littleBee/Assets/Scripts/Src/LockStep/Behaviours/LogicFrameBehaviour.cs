@@ -14,6 +14,9 @@ namespace Synchronize.Game.Lockstep.Behaviours
         public Simulation Sim { set; get; }
         public int CurrentFrameIdx { private set; get; }
 
+        /// <summary>
+        /// 每帧的所有实体操作信息
+        /// </summary>
         List<List<FrameIdxInfo>> m_FrameIdxInfos;
         private RoomServiceProxy roomServices;
         private readonly List<FrameIdxInfo> m_DefaultEmptyFrameIdxInfos = new List<FrameIdxInfo>();
@@ -78,6 +81,7 @@ namespace Synchronize.Game.Lockstep.Behaviours
             ++CurrentFrameIdx;
             m_FrameIdxInfos.Add(m_DefaultEmptyFrameIdxInfos);
             #region re-join
+            // 有历史帧的时候，同步这些帧
             if (roomServices.Session.DictKeyframeCollection != null && roomServices.Session.WriteKeyframeCollectionIndex > CurrentFrameIdx)
             {
                 if (roomServices.Session.DictKeyframeCollection.TryGetValue(CurrentFrameIdx, out PtKeyFrameCollection keyframeCollection))
