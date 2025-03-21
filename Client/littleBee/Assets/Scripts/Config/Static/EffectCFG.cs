@@ -1,4 +1,5 @@
-﻿using Synchronize.Game.Lockstep.Config.Static.Interface;
+﻿using System.Collections.Generic;
+using Synchronize.Game.Lockstep.Config.Static.Interface;
 
 namespace Synchronize.Game.Lockstep.Config.Static
 {
@@ -7,5 +8,6 @@ namespace Synchronize.Game.Lockstep.Config.Static
         public int ConfigId { get; set; }
         public int EffectGroupId{ get; set; }
         public int EffectTypeId{ get; set; }
+        public List<int> EffectParam { get; set; }
     }
 }

@@ -17,5 +17,7 @@ namespace Synchronize.Game.Lockstep.Config.Static
         public int DefenceType { set; get; }
         public int Attack { set; get; }
         public int Defence { set; get; }
+        
+        public int TreasureGroupId { set; get; }
     }
 }
