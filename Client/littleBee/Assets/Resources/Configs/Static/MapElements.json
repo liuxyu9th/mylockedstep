@@ -11,7 +11,8 @@
     "Mass": 15,
     "Diameter": 15,
     "Attack": 0,
-    "Defence": 0
+    "Defence": 0,
+    "TreasureGroupId": 0
   },
   {
     "ConfigId": 2,
@@ -25,7 +26,8 @@
     "Mass": 3,
     "Diameter": 3,
     "Attack": 0,
-    "Defence": 0
+    "Defence": 0,
+    "TreasureGroupId": 0
   },
   {
     "ConfigId": 3,
@@ -39,7 +41,8 @@
     "Mass": 1,
     "Diameter": 1,
     "Attack": 0,
-    "Defence": 0
+    "Defence": 0,
+    "TreasureGroupId": 0
   },
   {
     "ConfigId": 4,
@@ -53,7 +56,8 @@
     "Mass": 2,
     "Diameter": 2,
     "Attack": 0,
-    "Defence": 0
+    "Defence": 0,
+    "TreasureGroupId": 0
   },
   {
     "ConfigId": 5,
@@ -67,7 +71,8 @@
     "Mass": 3,
     "Diameter": 3,
     "Attack": 0,
-    "Defence": 0
+    "Defence": 0,
+    "TreasureGroupId": 0
   },
   {
     "ConfigId": 6,
@@ -81,7 +86,8 @@
     "Mass": 4,
     "Diameter": 4,
     "Attack": 0,
-    "Defence": 0
+    "Defence": 0,
+    "TreasureGroupId": 0
   },
   {
     "ConfigId": 7,
@@ -95,7 +101,8 @@
     "Mass": 5,
     "Diameter": 5,
     "Attack": 0,
-    "Defence": 0
+    "Defence": 0,
+    "TreasureGroupId": 0
   },
   {
     "ConfigId": 8,
@@ -109,7 +116,8 @@
     "Mass": 6,
     "Diameter": 6,
     "Attack": 0,
-    "Defence": 0
+    "Defence": 0,
+    "TreasureGroupId": 0
   },
   {
     "ConfigId": 9,
@@ -123,7 +131,8 @@
     "Mass": 7,
     "Diameter": 7,
     "Attack": 0,
-    "Defence": 0
+    "Defence": 0,
+    "TreasureGroupId": 0
   },
   {
     "ConfigId": 10,
@@ -137,6 +146,7 @@
     "Mass": 8,
     "Diameter": 8,
     "Attack": 0,
-    "Defence": 0
+    "Defence": 0,
+    "TreasureGroupId": 0
   }
 ]
