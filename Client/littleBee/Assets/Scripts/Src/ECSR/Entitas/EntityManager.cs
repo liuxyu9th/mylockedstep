@@ -75,6 +75,11 @@ namespace Synchronize.Game.Lockstep.Ecsr.Entitas
             world.SortComponents();
         }
 
+        public static void CreatTreasure(EntityWorld world, uint entityId,TSVector2 position)
+        {
+            
+        }
+
         public static void CreateBrokenPieceEntity(EntityWorld world, uint entityId,byte count,uint startEntityId,TSVector2 position)
         {
             TSRandom random = TSRandom.New((int)entityId);
