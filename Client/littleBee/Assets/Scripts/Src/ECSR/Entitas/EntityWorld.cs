@@ -110,7 +110,7 @@ namespace Synchronize.Game.Lockstep.Ecsr.Entitas
                 }
             }
         }
-        public void ForEachComponent<T>(Action<T> action)
+        public void ForEachComponent<T>(Action<T> action) where T:AbstractComponent
         {
             try
             {

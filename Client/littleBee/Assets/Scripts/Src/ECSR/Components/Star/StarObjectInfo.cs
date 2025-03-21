@@ -10,6 +10,7 @@ namespace Synchronize.Game.Lockstep.Ecsr.Components.Star
     public class StarObjectInfo:AbstractComponent
     {
         public int ConfigId;
+        public int TreasureId;
         public StarObjectInfo()
         {
 
@@ -20,6 +21,7 @@ namespace Synchronize.Game.Lockstep.Ecsr.Components.Star
             comp.EntityId = EntityId;
             comp.Enable = Enable;
             comp.ConfigId = ConfigId;
+            comp.TreasureId = TreasureId;
             return comp;
         }
         public override string ToString()
@@ -32,6 +34,7 @@ namespace Synchronize.Game.Lockstep.Ecsr.Components.Star
             StarObjectInfo target = component as StarObjectInfo;
             Enable = target.Enable;
             ConfigId = target.ConfigId;
+            TreasureId = target.TreasureId;
         }
 
         public override AbstractComponent Deserialize(byte[] bytes)
@@ -41,6 +44,7 @@ namespace Synchronize.Game.Lockstep.Ecsr.Components.Star
                 EntityId = buffer.ReadUInt32();
                 Enable = buffer.ReadBool();
                 ConfigId = buffer.ReadInt32();
+                TreasureId = buffer.ReadInt32();
                 return this;
             }
         }
@@ -51,7 +55,8 @@ namespace Synchronize.Game.Lockstep.Ecsr.Components.Star
             {
                 return buffer.WriteUInt32(EntityId)
                     .WriteBool(Enable)
-                    .WriteInt32(ConfigId).Getbuffer();            
+                    .WriteInt32(ConfigId)            
+                    .WriteInt32(TreasureId).Getbuffer();            
             }
         }
     }
