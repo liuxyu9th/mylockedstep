@@ -36,37 +36,9 @@
   },
   {
     "ConfigId": 6,
-    "Name": "SolarSystem",
-    "Desc": "SolarSystem",
-    "ResKey": "SolarSystem",
-    "PlayerCount": 4
-  },
-  {
-    "ConfigId": 7,
-    "Name": "SolarSystem",
-    "Desc": "SolarSystem",
-    "ResKey": "SolarSystem",
-    "PlayerCount": 4
-  },
-  {
-    "ConfigId": 8,
-    "Name": "SolarSystem",
-    "Desc": "SolarSystem",
-    "ResKey": "SolarSystem",
-    "PlayerCount": 4
-  },
-  {
-    "ConfigId": 9,
-    "Name": "SolarSystem",
-    "Desc": "SolarSystem",
-    "ResKey": "SolarSystem",
-    "PlayerCount": 4
-  },
-  {
-    "ConfigId": 10,
-    "Name": "SolarSystem",
-    "Desc": "SolarSystem",
-    "ResKey": "SolarSystem",
+    "Name": "Map_1",
+    "Desc": "Map_1",
+    "ResKey": "Map_1",
     "PlayerCount": 4
   }
 ]

@@ -8,6 +8,7 @@ using TrueSync;
 using Synchronize.Game.Lockstep.Ecsr.Entitas;
 using Synchronize.Game.Lockstep.Ecsr.Components.Common;
 using Synchronize.Game.Lockstep.Ecsr.Components.Star;
+using Synchronize.Game.Lockstep.Managers;
 
 namespace Synchronize.Game.Lockstep.MapEditor
 {
@@ -23,6 +24,11 @@ namespace Synchronize.Game.Lockstep.MapEditor
                 if(pos!=null)
                 {
                     transform.position = new Vector3(pos.Position.x.AsFloat(),0,pos.Position.y.AsFloat());
+                }
+                else
+                {
+                    ModuleManager.GetModule<PoolModule>().Recycle(GetComponent<PoolObject>().GetFullName(), gameObject); 
+                    return;
                 }
 
                 StarObjectRotation rot = World.GetComponentByEntityId<StarObjectRotation>(EntityId);

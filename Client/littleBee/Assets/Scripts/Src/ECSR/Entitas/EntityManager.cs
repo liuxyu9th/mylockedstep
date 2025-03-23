@@ -75,6 +75,11 @@ namespace Synchronize.Game.Lockstep.Ecsr.Entitas
             world.SortComponents();
         }
 
+        public static void CreatTreasure(EntityWorld world, uint entityId,TSVector2 position)
+        {
+            
+        }
+
         public static void CreateBrokenPieceEntity(EntityWorld world, uint entityId,byte count,uint startEntityId,TSVector2 position)
         {
             TSRandom random = TSRandom.New((int)entityId);
@@ -142,8 +147,8 @@ namespace Synchronize.Game.Lockstep.Ecsr.Entitas
                     world.AddComponent(new BreakableInfo() { EntityId = starInfo.m_EntityId, PieceCount = starInfo.m_BrokenPieceCount, PieceStartEntityId = starInfo.m_BrokenPieceStartId });
                 }
                    
-                if (Convert.ToSingle(starInfo.m_RevolutionSpeed) != 0)
-                    world.AddComponent(new StarObjectRevolution() { EntityId = starInfo.m_EntityId,Degree = starInfo.m_InitRevolutionDegree,Speed = Convert.ToSingle(starInfo.m_RevolutionSpeed),Radius = starInfo.m_RevolutionRedius,ParentEntityId = starInfo.m_ParentEntityId});                
+                //if (Convert.ToSingle(starInfo.m_RevolutionSpeed) != 0)
+                world.AddComponent(new StarObjectRevolution() { EntityId = starInfo.m_EntityId,Degree = starInfo.m_InitRevolutionDegree,Speed = Convert.ToSingle(starInfo.m_RevolutionSpeed),Radius = starInfo.m_RevolutionRedius,ParentEntityId = starInfo.m_ParentEntityId});                
                 ModuleManager.GetModule<EntitySpawnModule>().CreateGameObject(new EntitySpawnModule.MapCreateResourceRequest() { Type = Misc.EntityType.Star, EntityId = starInfo.m_EntityId, ConfigId = starInfo.m_ConfigId, ResourceId = starCfg.ResKey, World = world, Info = starInfo, IsEditorMode = isEditorMode });
             }
 

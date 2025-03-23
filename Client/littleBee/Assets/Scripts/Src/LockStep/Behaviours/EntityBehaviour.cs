@@ -57,6 +57,7 @@ namespace Synchronize.Game.Lockstep.Behaviours
         public virtual void Update()
         {
             Sim.GetEntityWorld().SortComponents();
+            // 执行所有system的逻辑
             for (int i = 0; i < Systems.Count; ++i)
                 Systems[i].Execute();
         }

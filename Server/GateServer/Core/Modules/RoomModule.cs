@@ -394,7 +394,7 @@ namespace Synchronize.Game.Lockstep.GateServer.Modules
                             OnUpdateDataToRoomMember(ptRoom, (ushort)ResponseMessageId.GS_LaunchGame, null);
                             if (!gameData.IsStandaloneMode)
                             {
-                                await CreateRoomProcess(GetApplication<GateApplication>().StartupConfigs["RoomModuleFullPath"], gameData, ptRoom);
+                                await CreateRoomProcess("RoomServer\\RoomServer.dll", gameData, ptRoom);
                             }
                             else
                             {                               

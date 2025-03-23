@@ -75,6 +75,7 @@ namespace Synchronize.Game.Lockstep
                 DateTime Now = DateTime.Now;
                 m_AccumulatorTicks += (Now - m_CurrentDateTime).Ticks;
                 m_CurrentDateTime = Now;
+                // 累计的tick大于每帧固定的tick时，模拟器运行一次
                 while (m_AccumulatorTicks >= FrameMsTickCount)
                 {
                     m_SimulationInstance.Run();

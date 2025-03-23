@@ -5,6 +5,7 @@ using Synchronize.Game.Lockstep.Frame;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TrueSync.Collision;
 using UnityEngine;
 
@@ -109,7 +110,7 @@ namespace Synchronize.Game.Lockstep.Ecsr.Entitas
                 }
             }
         }
-        public void ForEachComponent<T>(Action<T> action)
+        public void ForEachComponent<T>(Action<T> action) where T:AbstractComponent
         {
             try
             {
@@ -149,6 +150,14 @@ namespace Synchronize.Game.Lockstep.Ecsr.Entitas
             return new EntityWorld();
         }
 
+        public void RemoveAllEntity()
+        {
+            
+            foreach (var id in m_FrameData.EntityComponents.Keys.ToList())
+            {
+                RemoveEntity(id);
+            }
+        }
         public bool RemoveEntity(uint entityId)
         {
             if(m_FrameData.EntityComponents.TryGetValue(entityId, out List<AbstractComponent> removeList))              

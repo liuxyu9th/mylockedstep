@@ -133,6 +133,8 @@ GameObject:
   - component: {fileID: 348815807}
   - component: {fileID: 348815821}
   - component: {fileID: 348815808}
+  - component: {fileID: 348815823}
+  - component: {fileID: 348815822}
   m_Layer: 0
   m_Name: StarGalaxy
   m_TagString: Untagged
@@ -168,11 +170,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EnableDrawGizmos: 0
-  m_Mode: 2
-  m_GalaxyName: Empty
+  m_Mode: 0
+  m_GalaxyName: DemoSystem
   m_MapWidth: 300
   m_MapHeight: 300
-  m_ImportMapStream: {fileID: 4900000, guid: 77b026541bf239743a7756c07ed24136, type: 3}
+  m_ImportMapStream: {fileID: 4900000, guid: a5fc412d26bb4544a8248e66c70845e5, type: 3}
 --- !u!114 &348815821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,6 +187,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca0a7254ff1abc64ead427d181047519, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &348815822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348815806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6cc58eeb6081f44987c6da268d5667c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Info:
+    m_EntityId: 10002
+    m_ConfigId: 4
+    m_ParentEntityId: 10001
+    m_InitRevolutionDegree: 0
+    m_RevolutionSpeed: 0.1
+    m_RevolutionRedius: 12
+    m_RotationSpeed: 2
+    m_Visable: 1
+    m_BrokenPieceCount: 0
+    m_BrokenPieceStartId: 0
+--- !u!114 &348815823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348815806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6cc58eeb6081f44987c6da268d5667c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Info:
+    m_EntityId: 10001
+    m_ConfigId: 6
+    m_ParentEntityId: 0
+    m_InitRevolutionDegree: 0
+    m_RevolutionSpeed: -.2
+    m_RevolutionRedius: 0
+    m_RotationSpeed: 0.4
+    m_Visable: 1
+    m_BrokenPieceCount: 0
+    m_BrokenPieceStartId: 0
 --- !u!1 &723704812
 GameObject:
   m_ObjectHideFlags: 0
