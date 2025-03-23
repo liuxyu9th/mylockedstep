@@ -46,6 +46,7 @@
     <Compile Include="Assets\Editor\CrawledDataUnpacker.cs" />
     <Compile Include="Assets\Editor\LowLevelAPI.cs" />
     <Compile Include="Assets\Editor\Treemap\Group.cs" />
+    <Compile Include="Assets\Editor\ConfigTool\ConfigTool.cs" />
     <Compile Include="Assets\Editor\HighLevelAPI.cs" />
     <Compile Include="Assets\Editor\ArrayTools.cs" />
     <Compile Include="Assets\Editor\PackedManagedObject.cs" />

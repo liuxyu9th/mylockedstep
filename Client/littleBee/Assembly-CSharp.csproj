@@ -371,6 +371,7 @@
     <None Include="Assets\Resources\Configs\Static\Battleships.json" />
     <None Include="Assets\Planets\Raw\Polygon Planets Pack\Readme\readme.txt.txt" />
     <None Include="Assets\PolygonSciFiSpace\Shaders\SyntyStudios_Planet_Lines.shader" />
+    <None Include="Assets\Resources\Configs\Static\Effect.json" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\UnityPackages\JsonNet.unitypackage.json" />
     <None Include="Assets\Demigiant\DOTween\readme.txt" />
