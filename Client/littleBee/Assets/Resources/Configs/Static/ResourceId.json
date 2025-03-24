@@ -1,17 +1,5 @@
 [
   {
-    "ConfigId": 1,
-    "Path": "Prefabs/Stars/URPMode/Sun",
-    "Rtype": 1,
-    "ModelScaleRate": 2
-  },
-  {
-    "ConfigId": 2,
-    "Path": "Prefabs/Stars/URPMode/Barren/Barren_1",
-    "Rtype": 1,
-    "ModelScaleRate": 2
-  },
-  {
     "ConfigId": 3,
     "Path": "Prefabs/Stars/URPMode/Crystal_Planets/Crystal_planet_9",
     "Rtype": 1,

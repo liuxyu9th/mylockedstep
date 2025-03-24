@@ -1,19 +1,5 @@
 [
   {
-    "ConfigId": 1,
-    "Name": "SuperSolarSystem",
-    "Desc": "SuperSolarSystem",
-    "ResKey": "SuperSolarSystem",
-    "PlayerCount": 4
-  },
-  {
-    "ConfigId": 2,
-    "Name": "ThreeBodySystem",
-    "Desc": "ThreeBodySystem",
-    "ResKey": "ThreeBodySystem",
-    "PlayerCount": 4
-  },
-  {
     "ConfigId": 3,
     "Name": "SolarSystem",
     "Desc": "SolarSystem",

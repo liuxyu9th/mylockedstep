@@ -8,4 +8,8 @@
 /Client/littleBee/Assembly-CSharp.csproj
 /Client/littleBee/Assembly-CSharp.Player.csproj
 /Client/littleBee/obj
+
+/Client/littleBee/.vs
 /Server/GateServer/.vs
+
+/Client/littleBee/littleBee.sln.DotSettings.user
