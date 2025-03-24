@@ -1,4 +1,5 @@
-﻿using Synchronize.Game.Lockstep.Config.Static.Interface;
+﻿using System.Collections.Generic;
+using Synchronize.Game.Lockstep.Config.Static.Interface;
 
 namespace Synchronize.Game.Lockstep.Config.Static
 {
@@ -11,7 +12,8 @@ namespace Synchronize.Game.Lockstep.Config.Static
         public int Mass { get; set; }
         public int Diameter { get; set; }
         
-        public int EffectId{ get; set; }
+        public int[] EffectIds{ get; set; }
+        public List<int[]> EffectParams{ get; set; }
         public int GroupId{ get; set; }
         public int ProbWeight { get; set; }
     }

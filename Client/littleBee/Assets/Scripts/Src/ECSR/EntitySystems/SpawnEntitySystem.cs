@@ -5,6 +5,7 @@ using Synchronize.Game.Lockstep.Ecsr.Components.Common;
 using Synchronize.Game.Lockstep.Ecsr.Components.Star;
 using Synchronize.Game.Lockstep.Ecsr.Entitas;
 using Synchronize.Game.Lockstep.Managers;
+using Synchronize.Game.Lockstep.Managers.Random;
 using TrueSync;
 
 namespace Synchronize.Game.Lockstep.Ecsr.Systems
@@ -18,9 +19,23 @@ namespace Synchronize.Game.Lockstep.Ecsr.Systems
         {
             int groupId = _configModule.GetConfig<MapElementCFG>(star.ConfigId).TreasureGroupId;
             List<TreasureCFG> list = ConfigModule.TreasureGroupDict[groupId];
+            int weightSum = 0;
             foreach (var cfg in list)
             {
-                
+                weightSum += cfg.ProbWeight;
+            }
+
+            int x = 0;
+            int rand = ModuleManager.GetModule<RandomModule>().Next(0, weightSum);
+            for (int i = 0; i < list.Count; i++)
+            {
+                x += list[i].ProbWeight;
+                if (rand < x)
+                {
+                    Transform2D tf = World.GetComponentByEntityId<Transform2D>(star.EntityId);
+                    EntityManager.CreatTreasure(World,list[i],tf.Position);
+                    return;
+                }
             }
         }
         
@@ -40,7 +55,7 @@ namespace Synchronize.Game.Lockstep.Ecsr.Systems
             }
             catch (Exception exc)
             {
-                UnityEngine.Debug.LogError($"[RemoveEntitySystem] Error {exc.ToString()} {DateTime.Now.ToString()}");
+                UnityEngine.Debug.LogError($"[SpawnSystem] Error {exc.ToString()} {DateTime.Now.ToString()}");
             }
         }
     }

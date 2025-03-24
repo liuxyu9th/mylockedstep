@@ -218,7 +218,6 @@ namespace Synchronize.Game.Lockstep.RoomServer.Modules
         
         public void FlushKeyFrame(int currentFrameIdx)
         {
-            Thread.Sleep(260);
             Session.KeyFrameList.SetCurrentFrameIndex(currentFrameIdx);
             if (Session.QueueKeyFrameCollection.Count == 0) return;
             PtKeyFrameCollection flushCollection = new PtKeyFrameCollection() { FrameIdx = currentFrameIdx, KeyFrames = new List<FrameIdxInfo>() };

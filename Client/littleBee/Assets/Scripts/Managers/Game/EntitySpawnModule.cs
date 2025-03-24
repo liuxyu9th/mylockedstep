@@ -162,6 +162,18 @@ namespace Synchronize.Game.Lockstep.Managers
                         brokenPiece.transform.localScale = Vector3.one * (float)resCfg.ModelScaleRate;
                         brokenPiece.SetPieceCount(byte.Parse(creation.Data.ToString()));
                         break;
+                    case EntityType.Treasure:
+                        world = SimulationManager.Instance.GetSimulation().GetEntityWorld();
+                        Transform2D treasureTF = world.GetComponentByEntityId<Transform2D>(creation.EntityId);
+                        if (treasureTF != null)
+                        {
+                            resCfg = m_ConfigModule.GetConfig<ResourceIdCFG>(creation.ResourceId);
+                            m_PoolModule.CreatePoolIfNotExist(resCfg.Path);
+                            go = m_PoolModule.Reuse(resCfg.Path);
+                            go.name = string.Format("[Name:Treasure-{0} Id:{1}]", creation.ResourceId, creation.EntityId);
+                            go.transform.position = new Vector3(treasureTF.Position.x.AsFloat(), 0, treasureTF.Position.y.AsFloat());
+                        }
+                        break;
                 }
 
                 if (m_GameContentRootModule != null)

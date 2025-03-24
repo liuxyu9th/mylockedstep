@@ -118,7 +118,7 @@ namespace MemoryProfilerWindow.ConfigTool
                 string jsonFile = Path.Combine(jsonOutPutDir, fileName + ".json");
 
                 // 构建参数
-                string arguments = $"-n -a -e \"{excelFile}\" -j \"{jsonFile}\"";// 创建进程启动信息
+                string arguments = $"-n -a -e \"{excelFile}\" -j \"{jsonFile}\" -h 1";// 创建进程启动信息
                 ProcessStartInfo startInfo = new ProcessStartInfo
                 {
                     FileName = excel2JsonExePath,

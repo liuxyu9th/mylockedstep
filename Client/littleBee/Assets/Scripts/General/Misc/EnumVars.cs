@@ -14,6 +14,7 @@ namespace Synchronize.Game.Lockstep.Misc
         Bullet = 6,
         BackgroudCamera = 7,
         BrokenPiece = 8,
+        Treasure = 9,
     }
 
     public enum UserState:byte

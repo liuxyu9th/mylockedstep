@@ -41,31 +41,34 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="F:\mylockedstep\Client\littleBee\Assets\Plugins\General.dll" />
-    <Analyzer Include="F:\mylockedstep\Client\littleBee\Assets\Plugins\3rd\libs\LitJson.dll" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Assets\Epic Toon FX\Scripts\ETFXPitchRandomizer.cs" />
     <Compile Include="Assets\Scripts\Src\ECSR\Components\Common\Particle.cs" />
     <Compile Include="Assets\Scripts\Managers\Pool\PoolObject.cs" />
+    <Compile Include="Assets\Scripts\General\Net\Pt\PtFloatList.cs" />
     <Compile Include="Assets\Epic Toon FX\Demo\Scripts\ETFXFireProjectile.cs" />
     <Compile Include="Assets\Scripts\Src\ECSR\Entitas\EntityWorld.cs" />
     <Compile Include="Assets\Scripts\TrueSync\TSVector.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\NetPacket.cs" />
     <Compile Include="Assets\Scripts\NetServiceImpl\OnlineMode\Gate\GateAddressVO.cs" />
     <Compile Include="Assets\Scripts\GameUI\SettingPanel.cs" />
     <Compile Include="Assets\Scripts\AppMain\UI\ToastManager.cs" />
+    <Compile Include="Assets\Scripts\General\Net\Pt\PtExtendMethods.cs" />
     <Compile Include="Assets\Scripts\GameUI\ReplaysPanel.cs" />
     <Compile Include="Assets\Scripts\Src\LockStep\Behaviours\LogicFrameBehaviour.cs" />
     <Compile Include="Assets\Scripts\Src\LockStep\EntityWorldFrameData.cs" />
     <Compile Include="Assets\Scripts\Src\ECSR\EntitySystems\IEntitySystem.cs" />
+    <Compile Include="Assets\Scripts\General\Frame\FrameCommand.cs" />
     <Compile Include="Assets\Scripts\Src\ECSR\Renderers\MoveActionRenderer.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\NetSocket.cs" />
     <Compile Include="Assets\Scripts\Src\ECSR\EntitySystems\MacroWarSystem.cs" />
     <Compile Include="Assets\Scripts\Proxy\PlayerPrefabsProxy.cs" />
     <Compile Include="Assets\Scripts\Logger\UnityEnvLogger.cs" />
+    <Compile Include="Assets\Scripts\General\Service\Event\ExtraObjectMessageEvt.cs" />
+    <Compile Include="Assets\Epic Toon FX\Scripts\ETFXLightFade.cs" />
     <Compile Include="Assets\Epic Toon FX\Demo\Scripts\ETFXButtonScript.cs" />
     <Compile Include="Assets\Scripts\TrueSync\TSRect.cs" />
-    <Compile Include="Assets\Epic Toon FX\Scripts\ETFXLightFade.cs" />
     <Compile Include="Assets\Scripts\Src\ECSR\Components\Star\StarObjectRotation.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\NetStatistics.cs" />
     <Compile Include="Assets\Scripts\Src\ECSR\Components\Common\Movement2D.cs" />
     <Compile Include="Assets\Scripts\AppMain\UI\Items\RoomPlayerItem.cs" />
     <Compile Include="Assets\Scripts\Src\ECSR\EntitySystems\StarMovingSystem.cs" />
@@ -85,49 +88,73 @@
     <Compile Include="Assets\Epic Toon FX\Demo\Scripts\ETFXMouseOrbit.cs" />
     <Compile Include="Assets\Scripts\NetServiceImpl\Server\Core\Data\BattleSession.cs" />
     <Compile Include="Assets\Scripts\Tips\TipsExtends.cs" />
+    <Compile Include="Assets\Scripts\General\7zip\Compress\LZ\IMatchFinder.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\Layers\Crc32cLayer.cs" />
+    <Compile Include="Assets\Scripts\General\Net\Pt\PtKeyFrameCollectionList.cs" />
     <Compile Include="Assets\Scripts\Src\ECSR\Components\Common\Defence.cs" />
+    <Compile Include="Assets\Scripts\General\7zip\Compress\RangeCoder\RangeCoderBitTree.cs" />
+    <Compile Include="Assets\Scripts\General\Net\Pt\FrameIdxInfo.cs" />
     <Compile Include="Assets\Scripts\Config\Static\ResourceIdCFG.cs" />
     <Compile Include="Assets\Scripts\Misc\Handler.cs" />
     <Compile Include="Assets\Joystick\Example\ThirdPersonSolution\ThirdPersonSolution.cs" />
     <Compile Include="Assets\Scripts\TrueSync\Fix64SinLut.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\ReliableChannel.cs" />
+    <Compile Include="Assets\Scripts\General\7zip\Compress\RangeCoder\RangeCoder.cs" />
     <Compile Include="Assets\Scripts\Src\ECSR\EntitySystems\RotationSystem.cs" />
     <Compile Include="Assets\Scripts\Src\LockStep\Behaviours\Data\FunctionButtonInputRecord.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\NetPacketPool.cs" />
+    <Compile Include="Assets\Scripts\General\Net\Pt\PtErrorCode.cs" />
     <Compile Include="Assets\Epic Toon FX\Scripts\ETFXRotation.cs" />
     <Compile Include="Assets\Scripts\EventTriggerListener.cs" />
+    <Compile Include="Assets\Scripts\Config\Static\TreasureCFG.cs" />
     <Compile Include="Assets\Scripts\AppMain\UI\BattleSceneControl.cs" />
+    <Compile Include="Assets\Scripts\General\Net\Pt\PtUInt32List.cs" />
     <Compile Include="Assets\Scripts\Src\ECSR\Components\Common\FsmInfo.cs" />
     <Compile Include="Assets\Scripts\TrueSync\Fix64.cs" />
     <Compile Include="Assets\Scripts\Src\LockStep\Behaviours\RollbackBehaviour.cs" />
     <Compile Include="Assets\Notification\Scripts\Utils\Gradient\Scripts\UICornersGradient.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs" />
+    <Compile Include="Assets\Scripts\General\7zip\Common\CRC.cs" />
     <Compile Include="Assets\unity-simple-URP-pixelation-main\Scripts\PixelizeFeature.cs" />
+    <Compile Include="Assets\Scripts\General\ByteBuffer.cs" />
+    <Compile Include="Assets\Scripts\General\Service\Event\NetMessageEvt.cs" />
     <Compile Include="Assets\Scripts\Managers\UI\UIModule.cs" />
     <Compile Include="Assets\Scripts\TrueSync\TSMath.cs" />
     <Compile Include="Assets\Scripts\Src\Common\Utils.cs" />
     <Compile Include="Assets\Scripts\Src\LockStep\SimulationManager.cs" />
     <Compile Include="Assets\Scripts\TrueSync\TrueSyncExtensions.cs" />
-    <Compile Include="Assets\Scripts\Localization\Localization.cs" />
     <Compile Include="Assets\Scripts\Managers\ModuleManager.cs" />
+    <Compile Include="Assets\Scripts\Localization\Localization.cs" />
     <Compile Include="Assets\Scripts\TrueSync\Fix64AcosLut.cs" />
     <Compile Include="Assets\Scripts\MapEditor\AsteroidBelt.cs" />
     <Compile Include="Assets\Scripts\Src\LockStep\Behaviours\JoystickMovementInputBehaviour.cs" />
     <Compile Include="Assets\Scripts\Src\TaskSwitchStructures\FSM\StateMachine.cs" />
+    <Compile Include="Assets\Scripts\General\7zip\SevenZipHelper.cs" />
     <Compile Include="Assets\Scripts\GameUI\BattlePanel.cs" />
+    <Compile Include="Assets\Scripts\General\Net\Pt\PtSearchHostResult.cs" />
     <Compile Include="Assets\Scripts\Src\ECSR\Renderers\StarMoveActionRenderer.cs" />
+    <Compile Include="Assets\Scripts\General\7zip\Compress\LZ\LzInWindow.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\Utils\NetDataReader.cs" />
+    <Compile Include="Assets\Scripts\General\7zip\Compress\LZMA\LzmaBase.cs" />
     <Compile Include="Assets\Planets\Raw\Polygon Planets Pack\Scripts\RotateSimple.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\Layers\PacketLayerBase.cs" />
     <Compile Include="Assets\Scripts\Src\ECSR\Components\Common\Transform2D.cs" />
     <Compile Include="Assets\Scripts\Tips\TipsTrigger.cs" />
     <Compile Include="Assets\Scripts\Src\ECSR\EntitySystems\EntityMoveSystem.cs" />
     <Compile Include="Assets\Scripts\Src\Common\FunctionButtonInputManager.cs" />
+    <Compile Include="Assets\Scripts\General\Net\Pt\PtLaunchGameData.cs" />
     <Compile Include="Assets\Scripts\TrueSync\Collision\ICollisionProvider.cs" />
     <Compile Include="Assets\Scripts\MapEditor\StarGalaxyInfo.cs" />
     <Compile Include="Assets\Scripts\Managers\Game\GameContentRootModule.cs" />
-    <Compile Include="Assets\Notification\Scripts\Utils\Gradient\Scripts\UIGradientUtils.cs" />
     <Compile Include="Assets\Scripts\MappingData\LoginJsonResult.cs" />
+    <Compile Include="Assets\Notification\Scripts\Utils\Gradient\Scripts\UIGradientUtils.cs" />
     <Compile Include="Assets\Scripts\Src\LockStep\Behaviours\FunctionButtonInputBehaviour.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\BaseChannel.cs" />
     <Compile Include="Assets\LoopListExample\Code\DynamicInfinityItem.cs" />
     <Compile Include="Assets\Scripts\NetServiceImpl\Server\Core\Data\StartupConfig.cs" />
+    <Compile Include="Assets\Scripts\General\ILogger.cs" />
     <Compile Include="Assets\Scripts\NetServiceImpl\OnlineMode\Gate\GateServiceProxy.cs" />
+    <Compile Include="Assets\Scripts\General\Service\Modules\HeartbeatModule.cs" />
     <Compile Include="Assets\Scripts\TrueSync\TSRandom.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
     <Compile Include="Assets\Scripts\Src\ECSR\Components\Common\Mp.cs" />
@@ -138,6 +165,7 @@
     <Compile Include="Assets\Scripts\Src\TaskSwitchStructures\FSM\Timer.cs" />
     <Compile Include="Assets\Notification\Scripts\Utils\Gradient\Scripts\UIGradient.cs" />
     <Compile Include="Assets\Scripts\Src\LockStep\Simulation.cs" />
+    <Compile Include="Assets\Scripts\General\Notify\Notifier.cs" />
     <Compile Include="Assets\Scripts\Src\LockStep\Behaviours\Data\KeyboardMovementInputRecord.cs" />
     <Compile Include="Assets\Scripts\AppMain\UI\Items\ReplayItemRenderer.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
@@ -145,28 +173,41 @@
     <Compile Include="Assets\Scripts\Localization\IgnoreMultilingual.cs" />
     <Compile Include="Assets\Notification\Scripts\Utils\Gradient\Scripts\UITextCornersGradient.cs" />
     <Compile Include="Assets\Notification\Scripts\NotificationManager.cs" />
+    <Compile Include="Assets\Scripts\General\7zip\Common\OutBuffer.cs" />
     <Compile Include="Assets\Scripts\Misc\Vars.cs" />
+    <Compile Include="Assets\Scripts\General\Net\Pt\PtUInt16List.cs" />
     <Compile Include="Assets\Scripts\GameUI\GatePanel.cs" />
     <Compile Include="Assets\Epic Toon FX\Demo\Scripts\ETFXSceneManager.cs" />
     <Compile Include="Assets\Scripts\TrueSync\TSQuaternion.cs" />
     <Compile Include="Assets\Scripts\Proxy\NetServiceProxy.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\Utils\CRC32C.cs" />
     <Compile Include="Assets\Scripts\AppMain\UI\Items\RoomItemRenderer.cs" />
     <Compile Include="Assets\Notification\Scripts\NotificationConfigAsset.cs" />
+    <Compile Include="Assets\Scripts\General\7zip\Compress\LZMA\LzmaDecoder.cs" />
+    <Compile Include="Assets\Scripts\General\Evt\EventMgr.cs" />
+    <Compile Include="Assets\Scripts\General\7zip\ICoder.cs" />
     <Compile Include="Assets\Scripts\MapEditor\StarObjectRender.cs" />
     <Compile Include="Assets\Scripts\Managers\UI\UIView.cs" />
     <Compile Include="Assets\Epic Toon FX\Demo\ParticleEffectsShowcase\Scripts\PEButtonScript.cs" />
     <Compile Include="Assets\Scripts\AppMain\GameEnvironment.cs" />
     <Compile Include="Assets\Scripts\Src\ECSR\EntitySystems\NineBlockBoxCollisionSystem.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\Utils\NetSerializer.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\INetEventListener.cs" />
     <Compile Include="Assets\Scripts\Src\ECSR\Components\Star\StarObjectInfo.cs" />
     <Compile Include="Assets\Scripts\Src\LockStep\Meta.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\Utils\NetPacketProcessor.cs" />
     <Compile Include="Assets\Notification\Scripts\Utils\Gradient\Scripts\SetDirty.cs" />
     <Compile Include="Assets\Epic Toon FX\Demo\Scripts\ETFXLoopScript.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\NetPeer.cs" />
     <Compile Include="Assets\Scripts\Config\Static\BattleshipCFG.cs" />
     <Compile Include="Assets\Scripts\Src\ECSR\Renderers\ActionRenderer.cs" />
+    <Compile Include="Assets\Scripts\General\ListIterator.cs" />
+    <Compile Include="Assets\Scripts\General\7zip\Compress\LZ\LzBinTree.cs" />
     <Compile Include="Assets\Joystick\Scripts\Joystick.cs" />
     <Compile Include="Assets\Scripts\AppMain\UI\Items\Hud.cs" />
     <Compile Include="Assets\Scripts\GameUI\MainPanel.cs" />
     <Compile Include="Assets\Scripts\Managers\Pool\PoolModule.cs" />
+    <Compile Include="Assets\Scripts\Src\ECSR\Components\Treasure\Treasure.cs" />
     <Compile Include="Assets\Scripts\TrueSync\TSVector4.cs" />
     <Compile Include="Assets\Scripts\Managers\Pool\Pool.cs" />
     <Compile Include="Assets\Scripts\Src\ECSR\EntitySystems\RemoveEntitySystem.cs" />
@@ -176,6 +217,8 @@
     <Compile Include="Assets\Scripts\AppMain\UI\Items\UserSettingItem.cs" />
     <Compile Include="Assets\Scripts\Src\LockStep\Behaviours\ISimulativeBehaviour.cs" />
     <Compile Include="Assets\Scripts\Config\Static\Interface\IObjectCFG.cs" />
+    <Compile Include="Assets\Scripts\General\Utils\DateTimeUtils.cs" />
+    <Compile Include="Assets\Scripts\General\Net\Pt\PtRoomList.cs" />
     <Compile Include="Assets\unity-simple-URP-pixelation-main\Scripts\PixelizePass.cs" />
     <Compile Include="Assets\Scripts\NetServiceImpl\Server\StandaloneLocalServer.cs" />
     <Compile Include="Assets\Scripts\Src\Log\GameEntityWorldLog.cs" />
@@ -186,24 +229,42 @@
     <Compile Include="Assets\Scripts\Src\ECSR\Components\Common\HudInfo.cs" />
     <Compile Include="Assets\Scripts\NetServiceImpl\Server\Core\Simulation\SimulationManager.cs" />
     <Compile Include="Assets\Scripts\Src\ECSR\EntitySystems\BrokenPieceSystem.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\Utils\FastBitConverter.cs" />
+    <Compile Include="Assets\Scripts\General\Misc\EnumVars.cs" />
     <Compile Include="Assets\Scripts\DrawLine.cs" />
+    <Compile Include="Assets\Scripts\General\7zip\Common\CommandLineParser.cs" />
     <Compile Include="Assets\Scripts\Src\LockStep\Behaviours\Data\JoystickMovementInputRecord.cs" />
     <Compile Include="Assets\Scripts\Src\ECSR\Entitas\EntityManager.cs" />
+    <Compile Include="Assets\Scripts\Src\ECSR\EntitySystems\SpawnEntitySystem.cs" />
     <Compile Include="Assets\LoopListExample\Code\LoopListExample.cs" />
     <Compile Include="Assets\Scripts\AppMain\GameClientNetwork.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\NetUtils.cs" />
     <Compile Include="Assets\Scripts\NetServiceImpl\Server\Core\Services\RoomApplication.cs" />
     <Compile Include="Assets\Scripts\Managers\UI\UITypes.cs" />
+    <Compile Include="Assets\Scripts\General\7zip\Compress\LZ\LzOutWindow.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\Layers\XorEncryptLayer.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\NatPunchModule.cs" />
+    <Compile Include="Assets\Scripts\General\Net\Pt\PtRoomPlayer.cs" />
+    <Compile Include="Assets\Scripts\Src\Common\EffectDef.cs" />
+    <Compile Include="Assets\Scripts\General\Service\Core\BaseApplication.cs" />
     <Compile Include="Assets\Scripts\MapEditor\AsteroidBeltInfo.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\Utils\INetSerializable.cs" />
     <Compile Include="Assets\Scripts\GameUI\LoadingPanel.cs" />
     <Compile Include="Assets\Scripts\TrueSync\TSMatrix4x4.cs" />
     <Compile Include="Assets\Scripts\Src\LockStep\Behaviours\KeyboardMovementInputBehaviour.cs" />
     <Compile Include="Assets\Scripts\Src\Common\InputManager.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\SequencedChannel.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\NetConstants.cs" />
+    <Compile Include="Assets\Scripts\General\Net\NetPacket.cs" />
     <Compile Include="Assets\Epic Toon FX\Demo\ParticleEffectsShowcase\Scripts\UICanvasManager.cs" />
     <Compile Include="Assets\Scripts\AppMain\UI\Items\LoginAlert.cs" />
     <Compile Include="Assets\Scripts\GameUI\RoomPanel.cs" />
+    <Compile Include="Assets\Scripts\General\Net\Pt\PtStringList.cs" />
     <Compile Include="Assets\Scripts\Managers\Game\EntitySpawnModule.cs" />
     <Compile Include="Assets\Scripts\Managers\Net\GameClientNetworkModule.cs" />
     <Compile Include="Assets\Scripts\Src\ECSR\Components\Common\BrokenPiece.cs" />
+    <Compile Include="Assets\Scripts\General\Service\Modules\BaseModule.cs" />
+    <Compile Include="Assets\Scripts\General\Net\Pt\PtInt16List.cs" />
     <Compile Include="Assets\Scripts\Src\LockStep\Behaviours\Data\IInputRecord.cs" />
     <Compile Include="Assets\Scripts\TrueSync\Collision\NineBlockBoxCollision.cs" />
     <Compile Include="Assets\Scripts\Src\ECSR\EntitySystems\GravitationalSystem.cs" />
@@ -212,9 +273,13 @@
     <Compile Include="Assets\Scripts\AppMain\UI\Items\HudRender.cs" />
     <Compile Include="Assets\Scripts\Proxy\UserDataProxy.cs" />
     <Compile Include="Assets\Scripts\Proxy\DataProxy.cs" />
+    <Compile Include="Assets\Scripts\General\7zip\Compress\LZMA\LzmaEncoder.cs" />
+    <Compile Include="Assets\Scripts\General\Net\Pt\PtKeyFrameCollection.cs" />
     <Compile Include="Assets\Scripts\NetServiceImpl\Server\Core\Data\UserStateObject.cs" />
     <Compile Include="Assets\Scripts\Src\ECSR\EntitySystems\MicroWarSystem.cs" />
     <Compile Include="Assets\Scripts\AppMain\Controls\UICameraControl.cs" />
+    <Compile Include="Assets\Scripts\Config\Static\EffectCFG.cs" />
+    <Compile Include="Assets\Scripts\General\Utils\Extends.cs" />
     <Compile Include="Assets\Scripts\Src\ECSR\Components\Common\BreakableInfo.cs" />
     <Compile Include="Assets\Scripts\AppMain\Controls\RotatingControl.cs" />
     <Compile Include="Assets\Scripts\Src\ECSR\Components\Common\Bullet.cs" />
@@ -223,33 +288,50 @@
     <Compile Include="Assets\Scripts\Src\ECSR\Renderers\BrokenPiecePlanetRenderer.cs" />
     <Compile Include="Assets\Scripts\WalkOnPlanet\WalkablePlayer.cs" />
     <Compile Include="Assets\LoopListExample\Code\DynamicInfinityListRenderer.cs" />
+    <Compile Include="Assets\Scripts\General\Net\NetStreamUtil.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\Utils\NetDataWriter.cs" />
     <Compile Include="Assets\Scripts\Src\ECSR\Components\Star\StarObjectRevolution.cs" />
     <Compile Include="Assets\Scripts\NetServiceImpl\Server\Core\Modules\BattleModule.cs" />
     <Compile Include="Assets\Scripts\Src\ECSR\Components\Common\GravitationalField.cs" />
     <Compile Include="Assets\Scripts\Src\Replays\ReplayInfo.cs" />
     <Compile Include="Assets\Scripts\Config\Static\MapElementCFG.cs" />
+    <Compile Include="Assets\Scripts\General\Service\Event\UnconnectedNetMessageEvt.cs" />
+    <Compile Include="Assets\Scripts\Src\ECSR\Components\Treasure\TreasureEffects.cs" />
     <Compile Include="Assets\Scripts\UnmanagedList.cs" />
     <Compile Include="Assets\Scripts\Src\Common\Enums.cs" />
     <Compile Include="Assets\LoopListExample\Code\ItemRender.cs" />
     <Compile Include="Assets\Scripts\NetServiceImpl\Server\Core\Simulation\Simulation.cs" />
+    <Compile Include="Assets\Scripts\General\Net\ServiceImpl\MessageEnums.cs" />
     <Compile Include="Assets\Scripts\NetServiceImpl\Server\Core\Simulation\ISimulativeBehaviour.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\Utils\NtpPacket.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs" />
+    <Compile Include="Assets\Scripts\General\7zip\Compress\RangeCoder\RangeCoderBit.cs" />
     <Compile Include="Assets\Scripts\Config\Static\Interface\ICombativeCFG.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs" />
+    <Compile Include="Assets\Scripts\General\7zip\Common\InBuffer.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\NetDebug.cs" />
     <Compile Include="Assets\Scripts\TrueSync\TSMatrix.cs" />
     <Compile Include="Assets\Scripts\Tips\TipsRenderer.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUI.cs" />
     <Compile Include="Assets\Epic Toon FX\Demo\Scripts\ETFXProjectileScript.cs" />
     <Compile Include="Assets\Joystick\Scripts\DirectionArrow.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\NetManager.cs" />
     <Compile Include="Assets\Scripts\Src\ECSR\Components\Base\AbstractComponent.cs" />
     <Compile Include="Assets\Scripts\AppMain\UI\Data\UserSettingData.cs" />
+    <Compile Include="Assets\Scripts\General\Net\PtMessagePackage.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\ConnectionRequest.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" />
+    <Compile Include="Assets\Scripts\General\Net\Pt\PtInt32List.cs" />
+    <Compile Include="Assets\Scripts\General\Net\Pt\PtRoom.cs" />
     <Compile Include="Assets\Scripts\Src\LockStep\BattleEntryPoint.cs" />
     <Compile Include="Assets\Scripts\MapEditor\StarGalaxy.cs" />
     <Compile Include="Assets\Scripts\Src\LockStep\Behaviours\EntityBehaviour.cs" />
     <Compile Include="Assets\Scripts\Src\LockStep\Behaviours\ComponentsBackupBehaviour.cs" />
     <Compile Include="Assets\Scripts\Src\ECSR\Components\Common\Countdown.cs" />
     <Compile Include="Assets\Scripts\TrueSync\TSCircle.cs" />
+    <Compile Include="Assets\Scripts\General\LiteNetLib\Utils\NtpRequest.cs" />
+    <Compile Include="Assets\Scripts\Managers\Random\RandomModule.cs" />
+    <Compile Include="Assets\Scripts\Src\ECSR\Renderers\TreasureRender.cs" />
     <Reference Include="UnityEngine">
       <HintPath>F:\Program Files\Unity 2021.3.42f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\mono\Managed\UnityEngine.dll</HintPath>
     </Reference>
@@ -457,14 +539,11 @@
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>F:\mylockedstep\Client\littleBee\Library\PackageCache\com.unity.visualscripting@1.9.4\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>F:\mylockedstep\Client\littleBee\Assets\UnityPackages\JsonNet\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="General">
-      <HintPath>F:\mylockedstep\Client\littleBee\Assets\Plugins\General.dll</HintPath>
-    </Reference>
     <Reference Include="LitJson">
       <HintPath>F:\mylockedstep\Client\littleBee\Assets\Plugins\3rd\libs\LitJson.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>F:\mylockedstep\Client\littleBee\Assets\UnityPackages\JsonNet\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>F:\Program Files\Unity 2021.3.42f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\mscorlib.dll</HintPath>
@@ -841,47 +920,47 @@
     <Reference Include="System.Xml.XPath.XDocument">
       <HintPath>F:\Program Files\Unity 2021.3.42f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-      <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-      <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
       <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.VisualScripting.State">
+      <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Core">
       <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Mathematics">
-      <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+      <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Burst">
-      <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
       <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+      <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
       <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.State">
-      <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+    <Reference Include="Unity.Burst">
+      <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

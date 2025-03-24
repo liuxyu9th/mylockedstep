@@ -6,6 +6,7 @@ using Synchronize.Game.Lockstep.Localization;
 using Synchronize.Game.Lockstep.Managers.UI;
 using Synchronize.Game.Lockstep.Notification;
 using Synchronize.Game.Lockstep.Gate;
+using Synchronize.Game.Lockstep.Managers.Random;
 using Synchronize.Game.Lockstep.Room;
 
 namespace Synchronize.Game.Lockstep
@@ -45,6 +46,7 @@ namespace Synchronize.Game.Lockstep
                 ModuleManager.Add(m_EntitySpawnModule);
             if (m_GameContentRootModule != null)
                 ModuleManager.Add(m_GameContentRootModule);
+            ModuleManager.Add(new RandomModule());
         }
         void InitLocalization()
         {

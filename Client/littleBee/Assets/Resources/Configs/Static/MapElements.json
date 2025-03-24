@@ -1,5 +1,35 @@
 [
   {
+    "ConfigId": 1,
+    "Name": "Sun",
+    "Desc": "asun",
+    "ResKey": 1,
+    "HaloType": 1,
+    "HaloEffectRadius": 1,
+    "AttackType": 1,
+    "DefenceType": 1,
+    "Mass": 15,
+    "Diameter": 15,
+    "Attack": 0,
+    "Defence": 0,
+    "TreasureGroupId": 0
+  },
+  {
+    "ConfigId": 2,
+    "Name": "FirePlanet",
+    "Desc": "asun1",
+    "ResKey": 9,
+    "HaloType": 1,
+    "HaloEffectRadius": 1,
+    "AttackType": 1,
+    "DefenceType": 1,
+    "Mass": 3,
+    "Diameter": 3,
+    "Attack": 0,
+    "Defence": 0,
+    "TreasureGroupId": 0
+  },
+  {
     "ConfigId": 3,
     "Name": "GreateGE",
     "Desc": "asun",
@@ -57,7 +87,7 @@
     "Diameter": 4,
     "Attack": 0,
     "Defence": 0,
-    "TreasureGroupId": 0
+    "TreasureGroupId": 1
   },
   {
     "ConfigId": 7,

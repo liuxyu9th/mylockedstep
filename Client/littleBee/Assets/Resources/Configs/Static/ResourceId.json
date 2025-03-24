@@ -1,5 +1,17 @@
 [
   {
+    "ConfigId": 1,
+    "Path": "Prefabs/Stars/URPMode/Sun",
+    "Rtype": 1,
+    "ModelScaleRate": 2
+  },
+  {
+    "ConfigId": 2,
+    "Path": "Prefabs/Stars/URPMode/Barren/Barren_1",
+    "Rtype": 1,
+    "ModelScaleRate": 2
+  },
+  {
     "ConfigId": 3,
     "Path": "Prefabs/Stars/URPMode/Crystal_Planets/Crystal_planet_9",
     "Rtype": 1,
@@ -74,6 +86,12 @@
   {
     "ConfigId": 100000,
     "Path": "Prefabs/Stars/URPMode/Broken/Prefabs/BrokenPlanet",
+    "Rtype": 1,
+    "ModelScaleRate": 1
+  },
+  {
+    "ConfigId": 14,
+    "Path": "Prefabs/Stars/URPMode/Black_hole/Black_hole_prefab",
     "Rtype": 1,
     "ModelScaleRate": 1
   }

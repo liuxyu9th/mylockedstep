@@ -1,0 +1,32 @@
+[
+  {
+    "ConfigId": 1,
+    "EffectGroupId": 0,
+    "EffectTypeId": 1001
+  },
+  {
+    "ConfigId": 2,
+    "EffectGroupId": 0,
+    "EffectTypeId": 1001
+  },
+  {
+    "ConfigId": 3,
+    "EffectGroupId": 0,
+    "EffectTypeId": 1001
+  },
+  {
+    "ConfigId": 4,
+    "EffectGroupId": 0,
+    "EffectTypeId": 1001
+  },
+  {
+    "ConfigId": 5,
+    "EffectGroupId": 0,
+    "EffectTypeId": 1001
+  },
+  {
+    "ConfigId": 6,
+    "EffectGroupId": 0,
+    "EffectTypeId": 1001
+  }
+]
