@@ -57,6 +57,7 @@ namespace Synchronize.Game.Lockstep
                 NineBlockBoxCollisionSystem collisionSystem = new NineBlockBoxCollisionSystem();
                 MacroWarSystem macroWarSystem = new MacroWarSystem();
                 MicroWarSystem microWarSystem = new MicroWarSystem();
+                SpawnEntitySystem spawnEntitySystem = new SpawnEntitySystem();
                 StrategyWarSystem strategyWarSystem = new StrategyWarSystem();
                 BrokenPieceSystem brokenPieceSystem = new BrokenPieceSystem();
                 RemoveEntitySystem removeSystem = new RemoveEntitySystem();
@@ -69,6 +70,7 @@ namespace Synchronize.Game.Lockstep
                     .AddSystem(starMovingSystem)
                     .AddSystem(collisionSystem)
                     .AddSystem(macroWarSystem)
+                    .AddSystem(spawnEntitySystem)
                     .AddSystem(microWarSystem)
                     .AddSystem(strategyWarSystem)
                     .AddSystem(brokenPieceSystem)
@@ -81,6 +83,7 @@ namespace Synchronize.Game.Lockstep
                     .AddSystem(starMovingSystem)
                     .AddSystem(collisionSystem)
                     .AddSystem(macroWarSystem)
+                    .AddSystem(spawnEntitySystem)
                     .AddSystem(microWarSystem)
                     .AddSystem(strategyWarSystem)
                     .AddSystem(brokenPieceSystem)
@@ -182,6 +185,7 @@ namespace Synchronize.Game.Lockstep
             NineBlockBoxCollisionSystem collisionSystem = new NineBlockBoxCollisionSystem();
             MacroWarSystem macroWarSystem = new MacroWarSystem();
             MicroWarSystem microWarSystem = new MicroWarSystem();
+            SpawnEntitySystem spawnEntitySystem = new SpawnEntitySystem();
             StrategyWarSystem strategyWarSystem = new StrategyWarSystem();
             BrokenPieceSystem brokenPieceSystem = new BrokenPieceSystem();
             RemoveEntitySystem removeSystem = new RemoveEntitySystem();
@@ -195,6 +199,7 @@ namespace Synchronize.Game.Lockstep
                 .AddSystem(starMovingSystem)
                 .AddSystem(collisionSystem)
                 .AddSystem(macroWarSystem)
+                .AddSystem(spawnEntitySystem)
                 .AddSystem(microWarSystem)
                 .AddSystem(strategyWarSystem)
                 .AddSystem(brokenPieceSystem)

@@ -8,6 +8,7 @@ using Synchronize.Game.Lockstep.Localization;
 using Synchronize.Game.Lockstep.Managers;
 using Synchronize.Game.Lockstep.Misc;
 using Synchronize.Game.Lockstep.Behaviours;
+using Synchronize.Game.Lockstep.Ecsr.Entitas;
 using Synchronize.Game.Lockstep.Notification;
 
 namespace Synchronize.Game.Lockstep.UI
@@ -100,6 +101,7 @@ namespace Synchronize.Game.Lockstep.UI
                 lock (sim.GetEntityWorld())
                 {
                     str += "CurrentFrameIdx " + logic.CurrentFrameIdx + "\nDateTime " + DateTime.Now.ToString() + "\nEntityCount " + sim.GetEntityWorld().GetEntityCount();
+                    str += "\nEntityId" + sim.GetEntityWorld().IdManager._createdEntityId;
                     m_TxtLog.text = str;
                 }
 

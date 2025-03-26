@@ -26,11 +26,11 @@ namespace Synchronize.Game.Lockstep.Ecsr.Systems
             }
 
             int x = 0;
-            int rand = ModuleManager.GetModule<RandomModule>().Next(0, weightSum);
+            int rand = ModuleManager.GetModule<RandomModule>().Next(1, weightSum+1);
             for (int i = 0; i < list.Count; i++)
             {
                 x += list[i].ProbWeight;
-                if (rand < x)
+                if (rand <= x)
                 {
                     Transform2D tf = World.GetComponentByEntityId<Transform2D>(star.EntityId);
                     EntityManager.CreatTreasure(World,list[i],tf.Position);

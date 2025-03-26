@@ -77,7 +77,7 @@ namespace Synchronize.Game.Lockstep.Behaviours
         public void Update()
         {
             int frameIdx = logic.CurrentFrameIdx;
-            SetEntityWorldFrameByFrameIdx(frameIdx, new EntityWorldFrameData(Sim.GetEntityWorld().GetAllCloneComponents()));
+            SetEntityWorldFrameByFrameIdx(frameIdx, new EntityWorldFrameData(Sim.GetEntityWorld().GetAllCloneComponents(),Sim.GetEntityWorld().IdManager._createdEntityId));
             SendKeyFrame(frameIdx);
             ClearEntityWorldFrameDataAt(frameIdx);
         }

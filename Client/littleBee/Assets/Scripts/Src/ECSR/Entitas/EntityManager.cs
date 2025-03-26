@@ -15,12 +15,14 @@ using TrueSync.Collision;
 
 namespace Synchronize.Game.Lockstep.Ecsr.Entitas
 {
+    public class EntityIdManager
+    {
+        public uint _createdEntityId = 1000000000;
+        public uint GetNewId => ++_createdEntityId;
+    }
     public class EntityManager
     {
         public const uint DEFAULT_ENTITY_ID_BACKGROUNDCAMERA = uint.MaxValue;
-        private static uint _createdEntityId = 1000000000;
-
-        public static uint GetNewEntityId => ++_createdEntityId;
 
         #region CreateEntity
         public static void CreatePlayerEntity(EntityWorld world,uint entityId,bool isSelf)
@@ -81,7 +83,7 @@ namespace Synchronize.Game.Lockstep.Ecsr.Entitas
 
         public static void CreatTreasure(EntityWorld world,TreasureCFG cfg,TSVector2 position)
         {
-            uint id = GetNewEntityId;
+            uint id = world.IdManager.GetNewId;
             Transform2D treasureTf = new Transform2D(position, cfg.Diameter/2f, 2);
             treasureTf.EntityId = id;
             world.AddComponent(treasureTf);
@@ -95,8 +97,8 @@ namespace Synchronize.Game.Lockstep.Ecsr.Entitas
 
         public static void CreateBrokenPieceEntity(EntityWorld world, uint entityId,byte count,TSVector2 position)
         {
-            TSRandom random = TSRandom.New((int)GetNewEntityId);
-            uint startId = GetNewEntityId;
+            TSRandom random = TSRandom.New((int)world.IdManager._createdEntityId);
+            uint startId = world.IdManager.GetNewId;
             for (byte i=0;i<count;++i)
             {
                 BrokenPiece brokenPiece = new BrokenPiece(entityId, i, i == 0 ) ;
@@ -106,7 +108,7 @@ namespace Synchronize.Game.Lockstep.Ecsr.Entitas
                 }
                 else
                 {
-                    brokenPiece.EntityId = GetNewEntityId;
+                    brokenPiece.EntityId = world.IdManager.GetNewId;
                 }
                 Countdown countdown = new Countdown(100+random.Next(-50,50));
                 countdown.EntityId = brokenPiece.EntityId;
@@ -160,11 +162,10 @@ namespace Synchronize.Game.Lockstep.Ecsr.Entitas
                 world.AddComponent(new Components.Common.Transform2D(TSVector2.zero, starCfg.Diameter / 2f) { EntityId=starInfo.m_EntityId});
                 world.AddComponent(new StarObjectRotation() { EntityId=starInfo.m_EntityId,Speed= Convert.ToSingle(starInfo.m_RotationSpeed)});
                 world.AddComponent(new Components.Star.StarObjectInfo() { EntityId = starInfo.m_EntityId,ConfigId = starInfo.m_ConfigId});
-          
-                if (starInfo.m_BrokenPieceCount >0 && starInfo.m_BrokenPieceStartId != 0)
+                world.AddComponent(new Hp(600) { EntityId = starInfo.m_EntityId });
+                world.AddComponent(new Defence(100, DefenceType.Urbanweight) { EntityId = starInfo.m_EntityId });
+                if (starInfo.m_BrokenPieceCount >0)
                 {
-                    world.AddComponent(new Hp(600) { EntityId = starInfo.m_EntityId });
-                    world.AddComponent(new Defence(100, DefenceType.Urbanweight) { EntityId = starInfo.m_EntityId });
                     world.AddComponent(new BreakableInfo() { EntityId = starInfo.m_EntityId, PieceCount = starInfo.m_BrokenPieceCount, PieceStartEntityId = starInfo.m_BrokenPieceStartId });
                 }
                    
@@ -207,7 +208,7 @@ namespace Synchronize.Game.Lockstep.Ecsr.Entitas
             using (ByteBuffer buffer = new ByteBuffer(info.ParamsContent))
             {
                 EntityType type = (EntityType)buffer.ReadByte();
-                uint newEntityId = GetNewEntityId;
+                uint newEntityId = world.IdManager.GetNewId;
                 Transform2D senderTransform = world.GetComponentByEntityId<Transform2D>(info.EntityId);               
                 if (senderTransform != null)
                 {              

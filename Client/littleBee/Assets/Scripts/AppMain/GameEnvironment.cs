@@ -34,7 +34,7 @@ public enum CameraControlType
         {
             if (m_CameraControlType == CameraControlType.Normal)
             {
-                m_MainCamera.orthographicSize = 100;
+                m_MainCamera.orthographicSize = 30;
                 m_MainCamera.transform.localPosition = new Vector3(0, 100, 0);
             }
         }

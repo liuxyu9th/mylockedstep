@@ -64,9 +64,9 @@
     <Compile Include="Assets\Scripts\Proxy\PlayerPrefabsProxy.cs" />
     <Compile Include="Assets\Scripts\Logger\UnityEnvLogger.cs" />
     <Compile Include="Assets\Scripts\General\Service\Event\ExtraObjectMessageEvt.cs" />
-    <Compile Include="Assets\Epic Toon FX\Scripts\ETFXLightFade.cs" />
     <Compile Include="Assets\Epic Toon FX\Demo\Scripts\ETFXButtonScript.cs" />
     <Compile Include="Assets\Scripts\TrueSync\TSRect.cs" />
+    <Compile Include="Assets\Epic Toon FX\Scripts\ETFXLightFade.cs" />
     <Compile Include="Assets\Scripts\Src\ECSR\Components\Star\StarObjectRotation.cs" />
     <Compile Include="Assets\Scripts\General\LiteNetLib\NetStatistics.cs" />
     <Compile Include="Assets\Scripts\Src\ECSR\Components\Common\Movement2D.cs" />
@@ -123,8 +123,8 @@
     <Compile Include="Assets\Scripts\Src\Common\Utils.cs" />
     <Compile Include="Assets\Scripts\Src\LockStep\SimulationManager.cs" />
     <Compile Include="Assets\Scripts\TrueSync\TrueSyncExtensions.cs" />
-    <Compile Include="Assets\Scripts\Managers\ModuleManager.cs" />
     <Compile Include="Assets\Scripts\Localization\Localization.cs" />
+    <Compile Include="Assets\Scripts\Managers\ModuleManager.cs" />
     <Compile Include="Assets\Scripts\TrueSync\Fix64AcosLut.cs" />
     <Compile Include="Assets\Scripts\MapEditor\AsteroidBelt.cs" />
     <Compile Include="Assets\Scripts\Src\LockStep\Behaviours\JoystickMovementInputBehaviour.cs" />
@@ -143,11 +143,12 @@
     <Compile Include="Assets\Scripts\Src\ECSR\EntitySystems\EntityMoveSystem.cs" />
     <Compile Include="Assets\Scripts\Src\Common\FunctionButtonInputManager.cs" />
     <Compile Include="Assets\Scripts\General\Net\Pt\PtLaunchGameData.cs" />
+    <Compile Include="Assets\Scripts\Src\ECSR\Renderers\TreasureRender.cs" />
     <Compile Include="Assets\Scripts\TrueSync\Collision\ICollisionProvider.cs" />
     <Compile Include="Assets\Scripts\MapEditor\StarGalaxyInfo.cs" />
     <Compile Include="Assets\Scripts\Managers\Game\GameContentRootModule.cs" />
-    <Compile Include="Assets\Scripts\MappingData\LoginJsonResult.cs" />
     <Compile Include="Assets\Notification\Scripts\Utils\Gradient\Scripts\UIGradientUtils.cs" />
+    <Compile Include="Assets\Scripts\MappingData\LoginJsonResult.cs" />
     <Compile Include="Assets\Scripts\Src\LockStep\Behaviours\FunctionButtonInputBehaviour.cs" />
     <Compile Include="Assets\Scripts\General\LiteNetLib\BaseChannel.cs" />
     <Compile Include="Assets\LoopListExample\Code\DynamicInfinityItem.cs" />
@@ -307,6 +308,7 @@
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs" />
     <Compile Include="Assets\Scripts\General\7zip\Compress\RangeCoder\RangeCoderBit.cs" />
     <Compile Include="Assets\Scripts\Config\Static\Interface\ICombativeCFG.cs" />
+    <Compile Include="Assets\Scripts\Managers\Random\RandomModule.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs" />
     <Compile Include="Assets\Scripts\General\7zip\Common\InBuffer.cs" />
     <Compile Include="Assets\Scripts\General\LiteNetLib\NetDebug.cs" />
@@ -330,8 +332,6 @@
     <Compile Include="Assets\Scripts\Src\ECSR\Components\Common\Countdown.cs" />
     <Compile Include="Assets\Scripts\TrueSync\TSCircle.cs" />
     <Compile Include="Assets\Scripts\General\LiteNetLib\Utils\NtpRequest.cs" />
-    <Compile Include="Assets\Scripts\Managers\Random\RandomModule.cs" />
-    <Compile Include="Assets\Scripts\Src\ECSR\Renderers\TreasureRender.cs" />
     <Reference Include="UnityEngine">
       <HintPath>F:\Program Files\Unity 2021.3.42f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\mono\Managed\UnityEngine.dll</HintPath>
     </Reference>
@@ -920,47 +920,47 @@
     <Reference Include="System.Xml.XPath.XDocument">
       <HintPath>F:\Program Files\Unity 2021.3.42f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+      <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Flow">
-      <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.State">
-      <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Core">
-      <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-      <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
       <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-      <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+    <Reference Include="Unity.VisualScripting.Flow">
+      <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
       <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Core">
+      <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Mathematics">
       <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst">
       <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-      <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+      <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+      <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.State">
+      <HintPath>F:\mylockedstep\Client\littleBee\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

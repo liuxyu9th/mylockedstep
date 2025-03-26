@@ -1,15 +1,20 @@
-﻿namespace Synchronize.Game.Lockstep.Managers.Random
+﻿using Synchronize.Game.Lockstep.Ecsr.Entitas;
+using TrueSync;
+
+namespace Synchronize.Game.Lockstep.Managers.Random
 {
     public class RandomModule:IModule
     {
-        public void Init()
-        {
-            // todo
-        }
 
         public int Next(int min, int max)
         {
-            return 1;
+            var world = SimulationManager.Instance.GetSimulation().GetEntityWorld();
+            TSRandom tsRandom = TSRandom.New((int) world.IdManager._createdEntityId);
+            return tsRandom.Next(min, max);
+        }
+
+        public void Init()
+        {
         }
     }
 }
