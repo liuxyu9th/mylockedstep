@@ -101,7 +101,6 @@ namespace Synchronize.Game.Lockstep.UI
                 lock (sim.GetEntityWorld())
                 {
                     str += "CurrentFrameIdx " + logic.CurrentFrameIdx + "\nDateTime " + DateTime.Now.ToString() + "\nEntityCount " + sim.GetEntityWorld().GetEntityCount();
-                    str += "\nEntityId" + sim.GetEntityWorld().IdManager._createdEntityId;
                     m_TxtLog.text = str;
                 }
 

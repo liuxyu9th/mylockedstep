@@ -19,7 +19,7 @@ namespace Synchronize.Game.Lockstep.Ecsr.Systems
                     GravitationalField gravitationalField = World.GetComponentByEntityId<GravitationalField>(info.EntityId);
                     if (gravitationalField != null)
                         gravitationalField.Enable = false;
-                    EntityManager.CreateBrokenPieceEntity( World,info.EntityId, info.PieceCount,transform.Position);//?
+                    EntityManager.CreateBrokenPieceEntity( World,info.EntityId, info.PieceCount,info.PieceStartEntityId,transform.Position);//?
                 }
             });
         }

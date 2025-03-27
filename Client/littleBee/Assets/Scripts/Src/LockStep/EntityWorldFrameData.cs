@@ -39,13 +39,11 @@ namespace Synchronize.Game.Lockstep.Ecsr.Entitas
         /// <summary>
         /// 当前所有的Components快照信息
         /// </summary>
-        public uint EntitySpawnId;
         public List<AbstractComponent> Components;
         public Dictionary<uint, List<AbstractComponent>> EntityComponents;
         public Dictionary<Type, List<AbstractComponent>> TypeComponents;
-        public EntityWorldFrameData(List<AbstractComponent> comps,uint entitySpawnId)
+        public EntityWorldFrameData(List<AbstractComponent> comps)
         {
-            EntitySpawnId = entitySpawnId;
             Components = comps;
             EntityComponents = new Dictionary<uint, List<AbstractComponent>>();
             TypeComponents = new Dictionary<Type, List<AbstractComponent>>();
@@ -61,12 +59,11 @@ namespace Synchronize.Game.Lockstep.Ecsr.Entitas
                 TypeComponents[type].Add(component);
             }
         }
-        public EntityWorldFrameData(List<AbstractComponent> comps, Dictionary<uint, List<AbstractComponent>> entityComps, Dictionary<Type, List<AbstractComponent>> typeComps,uint entitySpawnId)
+        public EntityWorldFrameData(List<AbstractComponent> comps, Dictionary<uint, List<AbstractComponent>> entityComps, Dictionary<Type, List<AbstractComponent>> typeComps)
         {
             Components = comps;
             EntityComponents = entityComps;
             TypeComponents = typeComps;
-            EntitySpawnId = entitySpawnId;
         }
         public void Clear()
         {
@@ -94,7 +91,6 @@ namespace Synchronize.Game.Lockstep.Ecsr.Entitas
         {
             using(ByteBuffer buffer = new ByteBuffer())
             {
-                buffer.WriteUInt32(data.EntitySpawnId);
                 buffer.WriteInt32(data.Components.Count);
                 for(int i=0;i<data.Components.Count;++i)
                 {
@@ -117,7 +113,6 @@ namespace Synchronize.Game.Lockstep.Ecsr.Entitas
         {
             using (ByteBuffer buffer = new ByteBuffer(bytes))
             {
-                uint spawnId = buffer.ReadUInt32();
                 int count = buffer.ReadInt32();
                 List<AbstractComponent> components = new List<AbstractComponent>();
                 for (int i = 0; i < count; ++i)
@@ -127,7 +122,7 @@ namespace Synchronize.Game.Lockstep.Ecsr.Entitas
                     component.Deserialize(buffer.ReadBytes());
                     components.Add(component);
                 }
-                return new EntityWorldFrameData(components,spawnId);
+                return new EntityWorldFrameData(components);
             }
         }
 

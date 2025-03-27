@@ -339,6 +339,7 @@
     <None Include="Assets\PolygonSciFiSpace\Shaders\SyntyStudios_Asteroid.shader" />
     <None Include="Assets\Resources\Configs\Maps\Map_1.json" />
     <None Include="Assets\Epic Toon FX\Prefabs\Combat\Combat FX.txt" />
+    <None Include="Assets\Resources\Configs\Maps\Map_TreasureTest.json" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\Resources\Configs\Maps\ThreeBodySystem.json" />
     <None Include="Assets\Planets\Raw\Low_Poly_Cars_DevilsWorkShop_V03\License.txt" />

@@ -1,5 +1,0 @@
-{
-    "RoomAddress":"127.0.0.1",
-    "MaxConnectionCount":"32",
-    "RoomModuleFullPath":"home/lighthouse/applications/galaxy_game/servers/GateServer/RoomServer.dll"
-}

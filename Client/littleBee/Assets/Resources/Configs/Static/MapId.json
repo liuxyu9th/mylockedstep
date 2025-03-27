@@ -37,8 +37,15 @@
   {
     "ConfigId": 6,
     "Name": "Map_1",
-    "Desc": "Map_1",
+    "Desc": null,
     "ResKey": "Map_1",
+    "PlayerCount": 4
+  },
+  {
+    "ConfigId": 7,
+    "Name": "Map_TreasureTest",
+    "Desc": null,
+    "ResKey": "Map_TreasureTest",
     "PlayerCount": 4
   }
 ]

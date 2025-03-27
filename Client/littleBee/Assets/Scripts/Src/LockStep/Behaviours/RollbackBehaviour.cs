@@ -63,7 +63,7 @@ namespace Synchronize.Game.Lockstep.Behaviours
                 while (frameIdx < logicBehaviour.CurrentFrameIdx)
                 {
                     base.Update();                                     
-                    backupBehaviour.SetEntityWorldFrameByFrameIdx(frameIdx++, new EntityWorldFrameData( Sim.GetEntityWorld().GetAllCloneComponents(),Sim.GetEntityWorld().IdManager._createdEntityId));
+                    backupBehaviour.SetEntityWorldFrameByFrameIdx(frameIdx++, new EntityWorldFrameData( Sim.GetEntityWorld().GetAllCloneComponents()));
                 }
                 return true;
             }

@@ -1,4 +1,5 @@
-﻿using Synchronize.Game.Lockstep.Ecsr.Entitas;
+﻿using Synchronize.Game.Lockstep.Behaviours;
+using Synchronize.Game.Lockstep.Ecsr.Entitas;
 using TrueSync;
 
 namespace Synchronize.Game.Lockstep.Managers.Random
@@ -8,8 +9,8 @@ namespace Synchronize.Game.Lockstep.Managers.Random
 
         public int Next(int min, int max)
         {
-            var world = SimulationManager.Instance.GetSimulation().GetEntityWorld();
-            TSRandom tsRandom = TSRandom.New((int) world.IdManager._createdEntityId);
+            var seed = SimulationManager.Instance.GetSimulation().GetBehaviour<LogicFrameBehaviour>().CurrentFrameIdx;
+            TSRandom tsRandom = TSRandom.New(seed);
             return tsRandom.Next(min, max);
         }
 

@@ -43,6 +43,39 @@ namespace MapEditor.Editor
             {
                 Add(galaxy);
             }
+            if(GUILayout.Button("SuperAdd"))
+            {
+                superAdd(galaxy);
+            }
+        }
+
+        private static void superAdd(StarGalaxy galaxy)
+        {
+            uint startId = 10000;
+            StarObject start = galaxy.AddComponent<StarObject>();
+            start.m_Info = new StarObjectInfo();
+            start.m_Info.m_ConfigId = 10;
+            start.m_Info.m_EntityId = startId;
+            start.m_Info.m_Visable = true;
+            start.m_Info.m_RevolutionSpeed = "0";
+            start.m_Info.m_RotationSpeed = "0";
+            int redius = 10;
+            for (int x = 0; x < 10; x++)
+            {
+                for (int y = 0; y < 10; y++)
+                {
+                    var tem = new StarObjectInfo();
+                    tem.m_ConfigId = 6;
+                    tem.m_EntityId = ++startId;
+                    tem.m_RevolutionRedius = redius;
+                    tem.m_InitRevolutionDegree = 36 * y;
+                    tem.m_ParentEntityId = start.m_Info.m_EntityId;
+                    tem.m_RevolutionSpeed = "0";
+                    tem.m_RotationSpeed = "0";
+                    galaxy.AddComponent<StarObject>().m_Info = tem;
+                }
+                redius += 4;
+            }
         }
 
         private static void Add(StarGalaxy galaxy)

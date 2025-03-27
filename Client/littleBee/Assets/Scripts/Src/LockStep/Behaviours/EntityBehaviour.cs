@@ -18,7 +18,7 @@ namespace Synchronize.Game.Lockstep.Behaviours
         }
         public List<IEntitySystem> Systems = new List<IEntitySystem>();
         protected RoomServiceProxy roomServices;
-        protected LogicFrameBehaviour logicBehaviour;
+        public LogicFrameBehaviour logicBehaviour;
 
         public EntityBehaviour()
         {

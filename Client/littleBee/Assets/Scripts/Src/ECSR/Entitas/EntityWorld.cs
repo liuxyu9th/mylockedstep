@@ -18,7 +18,6 @@ namespace Synchronize.Game.Lockstep.Ecsr.Entitas
         EntityWorldFrameData m_FrameData;
         ICollisionProvider m_CollisionProvider;       
         Dictionary<string, object> m_Metadata;
-        public EntityIdManager IdManager;
 
         public void Dispose()
         {
@@ -26,7 +25,6 @@ namespace Synchronize.Game.Lockstep.Ecsr.Entitas
             m_CollisionProvider = null;
             m_Metadata.Clear();
             m_Metadata = null;
-            IdManager = null;
         }
         public void SortComponents() { }
         public void SetMeta(string key,object value)
@@ -41,11 +39,9 @@ namespace Synchronize.Game.Lockstep.Ecsr.Entitas
         private EntityWorld()
         {
             m_Metadata = new Dictionary<string, object>();
-            IdManager = new EntityIdManager();
             m_FrameData = new EntityWorldFrameData(new List<AbstractComponent>(),
                                                     new Dictionary<uint, List<AbstractComponent>>(),
-                                                    new Dictionary<Type, List<AbstractComponent>>(),
-                                                    IdManager._createdEntityId);
+                                                    new Dictionary<Type, List<AbstractComponent>>());
         }
 
         public int GetEntityCount() 
@@ -229,7 +225,6 @@ namespace Synchronize.Game.Lockstep.Ecsr.Entitas
             m_FrameData.Components = data.Components;
             m_FrameData.EntityComponents = data.EntityComponents;
             m_FrameData.TypeComponents = data.TypeComponents;
-            IdManager._createdEntityId = data.EntitySpawnId;
 
             for (int i = 0; i < collection.KeyFrames.Count; ++i)
             {

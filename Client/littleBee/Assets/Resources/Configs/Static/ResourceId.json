@@ -91,7 +91,19 @@
   },
   {
     "ConfigId": 14,
-    "Path": "Prefabs/Stars/URPMode/Black_hole/Black_hole_prefab",
+    "Path": "Prefabs/Treasure/Green_Treasure",
+    "Rtype": 1,
+    "ModelScaleRate": 1
+  },
+  {
+    "ConfigId": 15,
+    "Path": "Prefabs/Treasure/Orange_Treasure",
+    "Rtype": 1,
+    "ModelScaleRate": 1
+  },
+  {
+    "ConfigId": 16,
+    "Path": "Prefabs/Treasure/Red_Treasure",
     "Rtype": 1,
     "ModelScaleRate": 1
   }
