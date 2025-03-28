@@ -1,0 +1,6 @@
+
+https://blog.csdn.net/m0_53853844/article/details/145931817 帧同步技术要点
+https://blog.csdn.net/qq_42461824/article/details/125609431 《帧同步定点数》定点数原理和无损精度的实现方式
+
+https://blog.csdn.net/qq_41841073/article/details/127057494 浮点数原理，以及跨平台计算会误差的原因分析
+https://cloud.tencent.com/developer/article/1661575 一个由跨平台产生的浮点数bug 
