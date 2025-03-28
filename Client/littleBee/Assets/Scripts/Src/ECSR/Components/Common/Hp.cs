@@ -8,9 +8,15 @@ namespace Synchronize.Game.Lockstep.Ecsr.Components.Common
 {
     public class Hp : AbstractComponent
     {
-        public int Value { private set; get; }
-        public Hp(int value)
+        private int _maxValue;
+        public int MaxValue
         {
+            get => _maxValue;
+        }
+        public int Value { private set; get; }
+        public Hp(int value,int maxValue)
+        {
+            _maxValue = maxValue;
             Value = value;
         }
         public Hp() { }
@@ -21,9 +27,22 @@ namespace Synchronize.Game.Lockstep.Ecsr.Components.Common
             else
                 Value = 0;
         }
+
+        public void AddHp(int addValue)
+        {
+            if (Value + addValue > _maxValue)
+            {
+                Value = _maxValue;
+            }
+            else
+            {
+                Value += addValue;
+            }
+            
+        }
         public override AbstractComponent Clone()
         {
-            Hp hp = new Hp(Value);
+            Hp hp = new Hp(Value,_maxValue);
             hp.EntityId = EntityId;
             hp.Enable = Enable;
             return hp;
@@ -34,6 +53,7 @@ namespace Synchronize.Game.Lockstep.Ecsr.Components.Common
             Hp target = component as Hp;
             Enable = target.Enable;
             Value = target.Value;
+            _maxValue = target._maxValue;
         }
         public override string ToString()
         {
@@ -45,7 +65,8 @@ namespace Synchronize.Game.Lockstep.Ecsr.Components.Common
             {
                 return buffer.WriteUInt32(EntityId)
                     .WriteBool(Enable)
-                    .WriteInt32(Value).Getbuffer();
+                    .WriteInt32(Value).
+                    WriteInt32(_maxValue).Getbuffer();
             }
         }
 
@@ -56,6 +77,7 @@ namespace Synchronize.Game.Lockstep.Ecsr.Components.Common
                 EntityId = buffer.ReadUInt32();
                 Enable = buffer.ReadBool();
                 Value = buffer.ReadInt32();
+                _maxValue = buffer.ReadInt32();
                 return this;
             }
         }

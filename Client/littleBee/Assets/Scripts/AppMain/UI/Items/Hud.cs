@@ -67,7 +67,7 @@ namespace Synchronize.Game.Lockstep.UI
                 if (hp != null)
                 {
                     hudRender.SetHpEnable(true);
-                    hudRender.SetHp(hp.Value);
+                    hudRender.SetHp((float)(hp.Value) / hp.MaxValue);
                 }
 
 

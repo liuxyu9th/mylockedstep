@@ -16,15 +16,17 @@ namespace TrueSync.Collision
             Rect = rect;
             ContainsIds = new List<uint>();
         }
-        public bool ForEachIds(Func<uint,bool> funcRet) 
+        public bool ForEachIds(Func<uint,bool> funcRet)
         {
+            bool ret = false;
             for (int i = ContainsIds.Count - 1; i > -1; --i)
             {
-                bool ret = funcRet(ContainsIds[i]);
-                if (ret)
-                    return true;
+                if(funcRet(ContainsIds[i]) && ret == false)
+                {
+                    ret = true;
+                }
             }
-            return false;
+            return ret;
         }
         public void Clear()
         {

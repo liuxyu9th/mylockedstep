@@ -170,6 +170,10 @@ namespace Synchronize.Game.Lockstep.Managers
                             resCfg = m_ConfigModule.GetConfig<ResourceIdCFG>(creation.ResourceId);
                             m_PoolModule.CreatePoolIfNotExist(resCfg.Path);
                             go = m_PoolModule.Reuse(resCfg.Path);
+                            var showRender = go.GetComponent<ShowRender>();
+                            if (showRender == null)
+                                showRender = go.AddComponent<ShowRender>();
+                            showRender.SetEntityId(creation.EntityId);
                             go.name = string.Format("[Name:Treasure-{0} Id:{1}]", creation.ResourceId, creation.EntityId);
                             go.transform.position = new Vector3(treasureTF.Position.x.AsFloat(), 0, treasureTF.Position.y.AsFloat());
                         }

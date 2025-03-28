@@ -17,6 +17,7 @@ namespace Synchronize.Game.Lockstep.Ecsr.Components.Common
         public TSVector2 Toward;
         #region inner
         public uint CollisionEntityId=0;
+        public List<uint> CollisionEntityIds = new List<uint>();
         #endregion
         public Transform2D(TSVector2 pos,FP radius, byte detectionPriority = 0)
         {
@@ -26,14 +27,16 @@ namespace Synchronize.Game.Lockstep.Ecsr.Components.Common
 
         }
         public Transform2D() { }
-        public void OnCollisionEnter(uint otherEntityId)
+        public void SaveCollisionId(uint otherEntityId)
         {
             CollisionEntityId = otherEntityId;
+            CollisionEntityIds.Add(otherEntityId);
         }
      
         public void ClearCollisionEntityIds() 
         {
             CollisionEntityId = 0;
+            CollisionEntityIds.Clear();
         }
 
 
@@ -44,6 +47,7 @@ namespace Synchronize.Game.Lockstep.Ecsr.Components.Common
             com.EntityId = EntityId;
             com.Toward = Toward;
             com.CollisionEntityId = CollisionEntityId;
+            com.CollisionEntityIds = new List<uint>(CollisionEntityIds);
             return com;
         }
         public override void CopyFrom(AbstractComponent component)
@@ -56,6 +60,7 @@ namespace Synchronize.Game.Lockstep.Ecsr.Components.Common
             DetectionPriority = target.DetectionPriority;
             Toward = target.Toward;
             CollisionEntityId = target.CollisionEntityId;
+            CollisionEntityIds = new List<uint>(target.CollisionEntityIds);
         }
         public override string ToString()
         {            
@@ -77,7 +82,12 @@ namespace Synchronize.Game.Lockstep.Ecsr.Components.Common
                     .WriteInt64(Toward.x._serializedValue)
                     .WriteInt64(Toward.y._serializedValue)
                     .WriteUInt32(CollisionEntityId);
-                return buffer.Getbuffer();
+                 buffer.WriteInt32(CollisionEntityIds.Count);
+                 foreach (var id in CollisionEntityIds)
+                 {
+                     buffer.WriteUInt32(id);
+                 }
+                 return buffer.Getbuffer();
             }
         }
 
@@ -98,6 +108,12 @@ namespace Synchronize.Game.Lockstep.Ecsr.Components.Common
                 ty._serializedValue = buffer.ReadInt64();
                 Toward = new TSVector2(tx,ty);
                 CollisionEntityId = buffer.ReadUInt32();
+                int count = buffer.ReadInt32();
+                CollisionEntityIds = new List<uint>();
+                for (int i = 0; i < count; i++)
+                {
+                    CollisionEntityIds.Add(buffer.ReadUInt32());
+                }
                 return this;
             }
 

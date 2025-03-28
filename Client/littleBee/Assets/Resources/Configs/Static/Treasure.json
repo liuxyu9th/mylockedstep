@@ -2,54 +2,54 @@
   {
     "ConfigId": 1,
     "Name": "血包1",
-    "Desc": "加20血的宝物",
+    "Desc": "加400血的宝物",
     "ResKey": 14,
     "Mass": 1,
     "Diameter": 10,
     "GroupId": 1,
     "ProbWeight": 1,
     "EffectIds": [
-      1
+      10001
     ],
     "EffectParams": [
       [
-        0
+        400
       ]
     ]
   },
   {
     "ConfigId": 2,
     "Name": "血包2",
-    "Desc": "加20血的宝物",
+    "Desc": "加800血的宝物",
     "ResKey": 15,
     "Mass": 1,
     "Diameter": 10,
     "GroupId": 1,
     "ProbWeight": 1,
     "EffectIds": [
-      1
+      10001
     ],
     "EffectParams": [
       [
-        0
+        800
       ]
     ]
   },
   {
     "ConfigId": 3,
     "Name": "血包3",
-    "Desc": "加20血的宝物",
+    "Desc": "加2000血的宝物",
     "ResKey": 16,
     "Mass": 1,
     "Diameter": 10,
     "GroupId": 1,
     "ProbWeight": 1,
     "EffectIds": [
-      1
+      10001
     ],
     "EffectParams": [
       [
-        0
+        2000
       ]
     ]
   }

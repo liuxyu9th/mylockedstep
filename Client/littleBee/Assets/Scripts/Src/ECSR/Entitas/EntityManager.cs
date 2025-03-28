@@ -35,7 +35,7 @@ namespace Synchronize.Game.Lockstep.Ecsr.Entitas
             Components.Common.HudInfo hudInfo = new HudInfo();
             hudInfo.EntityId = entityId;
 
-            Hp hp = new Hp(5000);
+            Hp hp = new Hp(5000,5000);
             hp.EntityId = entityId;
 
 
@@ -84,7 +84,10 @@ namespace Synchronize.Game.Lockstep.Ecsr.Entitas
         public static void CreatTreasure(EntityWorld world,TreasureCFG cfg,TSVector2 position,uint entityId)
         {
             Transform2D treasureTf = new Transform2D(position, cfg.Diameter/2f, 2);
+            Treasure treasure = new Treasure(cfg.ConfigId);
             treasureTf.EntityId = entityId;
+            treasure.EntityId = entityId;
+            world.AddComponent(treasure);
             world.AddComponent(treasureTf);
             ModuleManager.GetModule<EntitySpawnModule>().CreateGameObject(new EntitySpawnModule.CreateResourceRequest()
             {
@@ -153,7 +156,7 @@ namespace Synchronize.Game.Lockstep.Ecsr.Entitas
                 world.AddComponent(new Components.Common.Transform2D(TSVector2.zero, starCfg.Diameter / 2f) { EntityId=starInfo.m_EntityId});
                 world.AddComponent(new StarObjectRotation() { EntityId=starInfo.m_EntityId,Speed= Convert.ToSingle(starInfo.m_RotationSpeed)});
                 world.AddComponent(new Components.Star.StarObjectInfo() { EntityId = starInfo.m_EntityId,ConfigId = starInfo.m_ConfigId});
-                world.AddComponent(new Hp(600) { EntityId = starInfo.m_EntityId });
+                world.AddComponent(new Hp(600,600) { EntityId = starInfo.m_EntityId });
                 world.AddComponent(new Defence(100, DefenceType.Urbanweight) { EntityId = starInfo.m_EntityId });
                 if (starInfo.m_BrokenPieceCount >0)
                 {
@@ -178,7 +181,7 @@ namespace Synchronize.Game.Lockstep.Ecsr.Entitas
                         world.AddComponent(new Transform2D(TSVector2.zero, 0.5f) { EntityId=entityId});
                         world.AddComponent(new StarObjectRotation() { EntityId=entityId,Speed = i%5 });
                         world.AddComponent(new Components.Star.StarObjectInfo() { EntityId=entityId,ConfigId=-1});
-                        world.AddComponent(new Hp(600) { EntityId=entityId});
+                        world.AddComponent(new Hp(600,600) { EntityId=entityId});
                         world.AddComponent(new Defence(100, DefenceType.Urbanweight) { EntityId=entityId});
                         if(Convert.ToSingle(beltInfo.m_RevolutionSpeed)!=0)
                         {

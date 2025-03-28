@@ -34,7 +34,7 @@ namespace Synchronize.Game.Lockstep.Ecsr.Systems
                                 if (transform.DetectionPriority > otherTransform.DetectionPriority && TSVector2.DistanceSquared(transform.Position, otherTransform.Position) <
                                     (otherTransform.Radius + transform.Radius) * (otherTransform.Radius + transform.Radius))
                                 {
-                                    transform.OnCollisionEnter(id);
+                                    transform.SaveCollisionId(id);
                                     return true;
                                 }
                             }

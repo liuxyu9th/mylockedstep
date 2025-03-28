@@ -109,6 +109,7 @@
     <Compile Include="Assets\Scripts\Config\Static\TreasureCFG.cs" />
     <Compile Include="Assets\Scripts\AppMain\UI\BattleSceneControl.cs" />
     <Compile Include="Assets\Scripts\General\Net\Pt\PtUInt32List.cs" />
+    <Compile Include="Assets\Scripts\Src\ECSR\EntitySystems\TreasureSystem.cs" />
     <Compile Include="Assets\Scripts\Src\ECSR\Components\Common\FsmInfo.cs" />
     <Compile Include="Assets\Scripts\TrueSync\Fix64.cs" />
     <Compile Include="Assets\Scripts\Src\LockStep\Behaviours\RollbackBehaviour.cs" />
@@ -220,6 +221,7 @@
     <Compile Include="Assets\Scripts\Config\Static\Interface\IObjectCFG.cs" />
     <Compile Include="Assets\Scripts\General\Utils\DateTimeUtils.cs" />
     <Compile Include="Assets\Scripts\General\Net\Pt\PtRoomList.cs" />
+    <Compile Include="Assets\Scripts\Src\ECSR\Renderers\ShowRender.cs" />
     <Compile Include="Assets\unity-simple-URP-pixelation-main\Scripts\PixelizePass.cs" />
     <Compile Include="Assets\Scripts\NetServiceImpl\Server\StandaloneLocalServer.cs" />
     <Compile Include="Assets\Scripts\Src\Log\GameEntityWorldLog.cs" />
@@ -297,7 +299,6 @@
     <Compile Include="Assets\Scripts\Src\Replays\ReplayInfo.cs" />
     <Compile Include="Assets\Scripts\Config\Static\MapElementCFG.cs" />
     <Compile Include="Assets\Scripts\General\Service\Event\UnconnectedNetMessageEvt.cs" />
-    <Compile Include="Assets\Scripts\Src\ECSR\Components\Treasure\TreasureEffects.cs" />
     <Compile Include="Assets\Scripts\UnmanagedList.cs" />
     <Compile Include="Assets\Scripts\Src\Common\Enums.cs" />
     <Compile Include="Assets\LoopListExample\Code\ItemRender.cs" />

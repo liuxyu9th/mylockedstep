@@ -63,12 +63,14 @@ namespace Synchronize.Game.Lockstep
                 RemoveEntitySystem removeSystem = new RemoveEntitySystem();
                 GravitationalSystem gravitySystem = new GravitationalSystem();
                 RotationSystem rotationSystem = new RotationSystem();
+                TreasureSystem treasureSystem = new TreasureSystem();
                 sim.GetBehaviour<EntityBehaviour>()
                     .AddSystem(fsmSystem)
                     .AddSystem(gravitySystem)
                     .AddSystem(moveSystem)
                     .AddSystem(starMovingSystem)
                     .AddSystem(collisionSystem)
+                    .AddSystem(treasureSystem)
                     .AddSystem(macroWarSystem)
                     .AddSystem(spawnEntitySystem)
                     .AddSystem(microWarSystem)
@@ -82,6 +84,7 @@ namespace Synchronize.Game.Lockstep
                     .AddSystem(moveSystem)
                     .AddSystem(starMovingSystem)
                     .AddSystem(collisionSystem)
+                    .AddSystem(treasureSystem)
                     .AddSystem(macroWarSystem)
                     .AddSystem(spawnEntitySystem)
                     .AddSystem(microWarSystem)
@@ -190,14 +193,15 @@ namespace Synchronize.Game.Lockstep
             BrokenPieceSystem brokenPieceSystem = new BrokenPieceSystem();
             RemoveEntitySystem removeSystem = new RemoveEntitySystem();
             GravitationalSystem gravitySystem = new GravitationalSystem();
-         
             RotationSystem rotationSystem = new RotationSystem();
+            TreasureSystem treasureSystem = new TreasureSystem();
             sim.GetBehaviour<EntityBehaviour>()
                 .AddSystem(fsmSystem)
                 .AddSystem(gravitySystem)
                 .AddSystem(moveSystem)
                 .AddSystem(starMovingSystem)
                 .AddSystem(collisionSystem)
+                .AddSystem(treasureSystem)
                 .AddSystem(macroWarSystem)
                 .AddSystem(spawnEntitySystem)
                 .AddSystem(microWarSystem)
