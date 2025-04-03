@@ -1,5 +1,5 @@
 {
     "RoomAddress":"127.0.0.1",
     "MaxConnectionCount":"32",
-    "RoomModuleFullPath":"F:\\mylockedstep\\Server\\RoomServer\\bin\\Debug\\netcoreapp6.0\\RoomServer.dll"
+    "RoomModuleFullPath":"E:\\GraduationProject\\mylockedstep\\Server\\RoomServer\\bin\\Debug\\netcoreapp6.0\\RoomServer.dll"
 }
