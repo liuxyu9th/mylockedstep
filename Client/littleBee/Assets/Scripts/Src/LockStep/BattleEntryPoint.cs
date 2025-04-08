@@ -148,7 +148,7 @@ namespace Synchronize.Game.Lockstep
             int standaloneModePort = 0;
             if (ptLaunchGameData.IsStandaloneMode)
             {
-                if(int.TryParse(UserSettingMgr.SettingList.Find(s => s.m_SettingTitle == UserSettingMgr.LAN_SERVER_PORT).m_SettingValue,out standaloneModePort)){
+                if(int.TryParse(UserSettingMgr.SettingList.Find(s => s.m_SettingTitle == UserSettingMgr.WAN_SERVER_PORT).m_SettingValue,out standaloneModePort)){
                     if(standaloneModePort == 0)
                     {
                         Debug.LogError("port error");

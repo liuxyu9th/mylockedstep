@@ -9,8 +9,9 @@ namespace Synchronize.Game.Lockstep.Managers
 {
     public class UserSettingMgr
     {
-        public static readonly string LAN_SERVER_PORT = "LAN SERVER PORT: ";
-        public static readonly string INDEX_SERVER_ADDRESS = "INDEX_SERVER_ADDRESS: ";
+        public static readonly string WAN_SERVER_PORT = "服务器端口号: ";
+        public static readonly string SERVER_ADDRESS = "服务器地址: ";
+        
         public static List<UserSettingData> SettingList;
         public static void Init()
         {
@@ -35,8 +36,8 @@ namespace Synchronize.Game.Lockstep.Managers
         static void InitDefaultSettingList()
         {
             SettingList = new List<UserSettingData>();
-            SettingList.Add(new UserSettingData() { m_SettingTitle= INDEX_SERVER_ADDRESS ,m_SettingValue= "http://175.24.198.37:3000", m_ValueType= INPUT_STRING });
-            SettingList.Add(new UserSettingData() { m_SettingTitle= LAN_SERVER_PORT ,m_SettingValue= "61001", m_ValueType=INPUT_NUMBER});
+            SettingList.Add(new UserSettingData() { m_SettingTitle= SERVER_ADDRESS ,m_SettingValue= "http://175.24.198.37:3000", m_ValueType= INPUT_STRING });
+            SettingList.Add(new UserSettingData() { m_SettingTitle= WAN_SERVER_PORT ,m_SettingValue= "61001", m_ValueType=INPUT_NUMBER});
         }
         public static readonly byte INPUT_NUMBER = 0;
         public static readonly byte INPUT_STRING = 1;

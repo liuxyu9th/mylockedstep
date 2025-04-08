@@ -7,7 +7,7 @@ namespace Synchronize.Game.Lockstep.Proxy
 {
     public class UserDataProxy : DataProxy
     {
-        public string WebServerAddress { get { return UserSettingMgr.SettingList.Find((s) => s.m_SettingTitle == UserSettingMgr.INDEX_SERVER_ADDRESS).m_SettingValue; } }
+        public string WebServerAddress { get { return UserSettingMgr.SettingList.Find((s) => s.m_SettingTitle == UserSettingMgr.SERVER_ADDRESS).m_SettingValue; } }
         public LoginJsonResult UserLoginInfo;
         public string WanGateAddressIp { private set; get; } = string.Empty;
         public int WanGatePort { private set; get; } = 0;

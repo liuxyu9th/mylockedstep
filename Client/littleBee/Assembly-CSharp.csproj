@@ -333,6 +333,7 @@
     <Compile Include="Assets\Scripts\Src\ECSR\Components\Common\Countdown.cs" />
     <Compile Include="Assets\Scripts\TrueSync\TSCircle.cs" />
     <Compile Include="Assets\Scripts\General\LiteNetLib\Utils\NtpRequest.cs" />
+    <Compile Include="Assets\UICam\CamRotate.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\unity-simple-URP-pixelation-main\Shaders\Pixelize.shader" />
     <None Include="Assets\Epic Toon FX\Prefabs\Environment\Environment FX.txt" />
