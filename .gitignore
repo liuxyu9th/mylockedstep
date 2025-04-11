@@ -13,3 +13,6 @@
 /Server/GateServer/.vs
 
 /Client/littleBee/littleBee.sln.DotSettings.user
+/Server/RoomServer/.idea
+/Server/RoomServer/obj
+/Server/RoomServer/.vs
