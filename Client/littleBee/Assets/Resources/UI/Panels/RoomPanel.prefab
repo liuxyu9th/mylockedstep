@@ -284,6 +284,7 @@ MonoBehaviour:
   m_BtnDone: {fileID: 7791135433371729439}
   m_BtnNextMap: {fileID: 7791135434331821389}
   m_TxtMapInfo: {fileID: 7791135434079181728}
+  m_ImgMapInfo: {fileID: 7791135433003654924}
 --- !u!114 &7117894697884163456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -499,7 +500,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: next
+  m_text: '>'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 203821f153ec6c246a486507ded8f630, type: 2}
   m_sharedMaterial: {fileID: 8849511585427775054, guid: 203821f153ec6c246a486507ded8f630,
@@ -635,7 +636,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: prev
+  m_text: <
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 203821f153ec6c246a486507ded8f630, type: 2}
   m_sharedMaterial: {fileID: 8849511585427775054, guid: 203821f153ec6c246a486507ded8f630,
@@ -1138,7 +1139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7791135433371729438
 RectTransform:
   m_ObjectHideFlags: 0

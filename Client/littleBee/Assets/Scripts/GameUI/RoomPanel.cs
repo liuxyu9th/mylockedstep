@@ -6,8 +6,11 @@ using Synchronize.Game.Lockstep.Localization;
 using Synchronize.Game.Lockstep.Managers;
 using Synchronize.Game.Lockstep.Misc;
 using System.Collections.Generic;
+using System.Linq;
 using Synchronize.Game.Lockstep.Proxy;
 using Synchronize.Game.Lockstep.Gate;
+using Unity.VisualScripting;
+using UnityEngine;
 
 namespace Synchronize.Game.Lockstep.UI
 {
@@ -26,7 +29,9 @@ namespace Synchronize.Game.Lockstep.UI
         public Button m_BtnDone;
         public Button m_BtnNextMap;
         public Text m_TxtMapInfo;
+        public Image m_ImgMapInfo;
 
+        private List<Sprite> m_mapImgs = new List<Sprite>();
         private ListIterator<Config.Static.MapIdCFG> m_IterMapIds = new ListIterator<Config.Static.MapIdCFG>(null);
         // Use this for initialization
         public override void OnInit()
@@ -43,6 +48,11 @@ namespace Synchronize.Game.Lockstep.UI
             Evt.EventMgr<EvtGate, PtRoom>.AddListener(EvtGate.UpdateCurrentRoom, OnUpdateRoom);
 
             Evt.EventMgr<EventType, object>.AddListener(EventType.ClosePanel, OnClosePanel);
+            var tex2ds = Resources.LoadAll<Texture2D>("MapImage");
+            foreach (var tex in tex2ds)
+            {
+                m_mapImgs.Add(Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), new Vector2(0.5f, 0.5f)));
+            }
         }
         void OnClosePanel(object obj)
         {
@@ -136,7 +146,8 @@ namespace Synchronize.Game.Lockstep.UI
 
         private void RefreshMapPanel(Config.Static.MapIdCFG mapIdCFG)
         {
-            m_TxtMapInfo.text = $"{mapIdCFG.ConfigId} {mapIdCFG.Name} {mapIdCFG.Desc}";
+            m_TxtMapInfo.text = $"{mapIdCFG.Name}";
+            m_ImgMapInfo.sprite = m_mapImgs[mapIdCFG.ConfigId - 1];
         }
 
 
@@ -145,7 +156,7 @@ namespace Synchronize.Game.Lockstep.UI
             m_DlPlayerListRender.SetDataProvider(selfRoom.Players);
             bool isRoomOwner = selfRoom.RoomOwnerUserId == DataProxy.Get<UserDataProxy>().UserLoginInfo.results[0].GetId();
             m_BtnLaunchGame.gameObject.SetActive(isRoomOwner);
-            m_BtnDone.gameObject.SetActive(isRoomOwner);
+            m_BtnDone.gameObject.SetActive(false);
             m_BtnNextMap.gameObject.SetActive(isRoomOwner);
             m_BtnPrevMap.gameObject.SetActive(isRoomOwner);
         }

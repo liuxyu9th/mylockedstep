@@ -1,48 +1,20 @@
 [
   {
     "ConfigId": 1,
-    "Name": "SuperSolarSystem",
-    "Desc": "SuperSolarSystem",
+    "Name": "SolarSystem",
+    "Desc": "SolarSystem",
     "ResKey": "SuperSolarSystem",
     "PlayerCount": 4
   },
   {
     "ConfigId": 2,
-    "Name": "ThreeBodySystem",
-    "Desc": "ThreeBodySystem",
-    "ResKey": "ThreeBodySystem",
-    "PlayerCount": 4
-  },
-  {
-    "ConfigId": 3,
-    "Name": "SolarSystem",
-    "Desc": "SolarSystem",
-    "ResKey": "SolarSystem",
-    "PlayerCount": 4
-  },
-  {
-    "ConfigId": 4,
-    "Name": "BigSuperSolarSystem",
-    "Desc": "BigSuperSolarSystem",
-    "ResKey": "BigSuperSolarSystem",
-    "PlayerCount": 4
-  },
-  {
-    "ConfigId": 5,
-    "Name": "SolarSystem",
-    "Desc": "SolarSystem",
-    "ResKey": "SolarSystem",
-    "PlayerCount": 4
-  },
-  {
-    "ConfigId": 6,
     "Name": "Map_1",
     "Desc": null,
     "ResKey": "Map_1",
     "PlayerCount": 4
   },
   {
-    "ConfigId": 7,
+    "ConfigId": 3,
     "Name": "Map_TreasureTest",
     "Desc": null,
     "ResKey": "Map_TreasureTest",

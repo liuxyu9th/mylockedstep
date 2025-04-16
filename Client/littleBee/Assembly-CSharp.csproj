@@ -114,6 +114,7 @@
     <Compile Include="Assets\Scripts\TrueSync\Fix64.cs" />
     <Compile Include="Assets\Scripts\Src\LockStep\Behaviours\RollbackBehaviour.cs" />
     <Compile Include="Assets\Notification\Scripts\Utils\Gradient\Scripts\UICornersGradient.cs" />
+    <Compile Include="Assets\UICam\CamRotate.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs" />
     <Compile Include="Assets\Scripts\General\7zip\Common\CRC.cs" />
     <Compile Include="Assets\unity-simple-URP-pixelation-main\Scripts\PixelizeFeature.cs" />
@@ -333,7 +334,6 @@
     <Compile Include="Assets\Scripts\Src\ECSR\Components\Common\Countdown.cs" />
     <Compile Include="Assets\Scripts\TrueSync\TSCircle.cs" />
     <Compile Include="Assets\Scripts\General\LiteNetLib\Utils\NtpRequest.cs" />
-    <Compile Include="Assets\UICam\CamRotate.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\unity-simple-URP-pixelation-main\Shaders\Pixelize.shader" />
     <None Include="Assets\Epic Toon FX\Prefabs\Environment\Environment FX.txt" />

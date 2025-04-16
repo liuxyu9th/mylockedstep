@@ -9,8 +9,8 @@ namespace Synchronize.Game.Lockstep.Managers
 {
     public class UserSettingMgr
     {
-        public static readonly string WAN_SERVER_PORT = "服务器端口号: ";
-        public static readonly string SERVER_ADDRESS = "服务器地址: ";
+        public static readonly string WAN_SERVER_PORT = "LAN SERVER PORT: ";
+        public static readonly string SERVER_ADDRESS = "INDEX_SERVER_ADDRESS: ";
         
         public static List<UserSettingData> SettingList;
         public static void Init()
